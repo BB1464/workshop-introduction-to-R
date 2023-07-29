@@ -5,6 +5,8 @@
 
 **Learning objectives**:
 
+- Installation of R and R Studio
+
 -   Introduction to R and R Studio.
 
 - Data summary (Simple Descriptive analysis) 
