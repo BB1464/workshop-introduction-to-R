@@ -74,9 +74,10 @@ library(ggstream)
 library(showtext)
 font_add_google(name = "Lato", family = "lato")
 showtext_auto()
-plot_df <- tibble(date = c(2014:2022, 2022.75), 
-                  value = c(0, 0.3, 0.1, 0.2, 0.3, 0.9, 0.5, 0.8, 0.95, 0.95), 
-                  fill = rep("#12a79d", 10))
+
+plot_df <- tibble(date = c(2014:2024, 2024.75), 
+                  value = c(0, 0.3, 0.1, 0.2, 0.3, 0.9, 0.5, 0.8, 0.95, 0.95,0.97,0.98), 
+                  fill = rep("#12a79d", 12))
 ggplot(data = plot_df, 
        mapping = aes(x = date, y = value, fill = fill)) +
   geom_stream(bw = 0.9) +
@@ -85,21 +86,21 @@ ggplot(data = plot_df,
   annotate("text", x = 2015.8, y = 0.45, label = "Bsc (Soil Science)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # mres
-  geom_errorbar(aes(y = -0.5, xmin = 2017.75, xmax = 2018.75), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2018.25, y = -0.7, label = "MSc\n(Agrometeorology)",
+  geom_errorbar(aes(y = -0.5, xmin = 2017.75, xmax = 2020.75), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2020.25, y = -0.7, label = "MSc (Agrometeorology)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # phd
-  geom_errorbar(aes(y = -0.5, xmin = 2018.75, xmax = 2021.5), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2020.25, y = -0.7, label = "PhD\n(Soil Science)",
+  geom_errorbar(aes(y = -0.5, xmin = 2023.75, xmax = 2024.5), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2023.25, y = -0.7, label = "PhD (Soil Science)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # jr
   geom_errorbar(aes(y = 0.7, xmin = 2021.8, xmax = 2022.70), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2022.2, y = 0.95, label = "CocoaSoils\nIITA",
+  annotate("text", x = 2022.2, y = 0.95, label = "CocoaSoils (IITA)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   labs(x = "", y = "") +
   scale_fill_identity() +
-  scale_x_continuous(breaks = c(2014:2022), 
-                     limits = c(2013, 2023)) +
+  scale_x_continuous(breaks = c(2014:2024), 
+                     limits = c(2013, 2024)) +
   scale_y_continuous(limits = c(-1.1, 1.1)) +
   theme_minimal() +
   theme(legend.position = "none", 
