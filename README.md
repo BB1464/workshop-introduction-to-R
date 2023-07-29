@@ -37,7 +37,7 @@ by Oluwafemi Oyedele and Akim Nofiu
 
 :spiral_calendar: August 12, 19 and 26, 2023
 :alarm_clock:     09:00 AM - 3:00 PM  
-:venue:           University of Ibadan  
+:hotel:           University of Ibadan  
 :writing_hand:    [https://bb1464.github.io/workshop-introduction-to-R/](https://bb1464.github.io/workshop-introduction-to-R/)  
 
 -----
