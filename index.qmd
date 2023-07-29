@@ -1,8 +1,8 @@
 ---
-title: "Training on Statistics and Data analysis using R"
+title: "Training on Statistics and Data Analysis using R"
 author: "Oluwafemi Oyedele"
 subtitle: "Post Graduate Students CPEB Club, \nUniversity of Ibadan"
-footer:  "[Workshop on Introduction to R](https://github.com/BB1464/CascardiaRConf2022)"
+footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
 logo: "img/ui.jpg"
 css: logo.css
 format: 
@@ -34,7 +34,7 @@ execute:
 
 -   `r fontawesome::fa("twitter")`: [\@OluwafemOyedele](https://twitter.com/OluwafemOyedele) `r emoji::emoji("thumbsup")`
 
--   `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/BB1464)
+-   `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/workshop-introduction-to-R)
 
 
 -  `r fontawesome::fa("globe")` [bb1464.github.io](https://bb1464.github.io/oluwafemi-oyedele/)
