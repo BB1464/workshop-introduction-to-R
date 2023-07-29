@@ -24,7 +24,7 @@ execute:
 ::: columns
 ::: {.column width="60%"}
 
--   I am a Agrometeorologist and Crop Simulation modeler
+-   I am an Agrometeorologist and Crop Simulation modeler
 
 -   I am a mentor of R4DS online learning community
 
