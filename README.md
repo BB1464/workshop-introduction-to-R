@@ -37,7 +37,7 @@ by Oluwafemi Oyedele and Akim Nofiu
 
 :spiral_calendar: August 12, 19 and 26, 2023
 
-:alarm_clock:     09:00 AM - 3:00 PM  
+:alarm_clock:     10:00 AM - 3:00 PM  
 
 :hotel:           University of Ibadan  
 
