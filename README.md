@@ -47,7 +47,8 @@ The slides can be found [**here**](https://bb1464.github.io/workshop-introductio
 my_packages <- c("tidyverse","readxl",
                  "factoextra","agricolae","agridat",
                  "lmerTest","lme4","sjPlot",
-                 "skimr","ggtext","extrafont","correlation","metan")
+                 "skimr","ggtext","extrafont","correlation","metan",
+                 "fontawesome","emoji")
 
 install.packages(my_packages, repos = "http://cran.rstudio.com")
 
