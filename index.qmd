@@ -119,10 +119,32 @@ ggplot(data = plot_df,
 
 ::: {.incremental}
 
--   Introduction to R and R Studio
+-   Introduction to R and R Studio.
 
--   Getting to know vector data in R
+- Data summary (Simple Descriptive analysis) 
+
+- Data wrangling
+
+- Design of Experiment (CRD, RCBD, Latin Square Design, Split Plot Design and Alpha Latice Design).
+
+- Linear regression
+
+- Correlation
+
+- Cluster analysis
 :::
+
+##
+#### Learning Objectives Continued
+
+::: {.incremental}
+- PCA
+
+- Data Visualization
+
+- Communication (Report)
+:::
+
 
 ## 
 
