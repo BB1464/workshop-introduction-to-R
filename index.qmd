@@ -1,0 +1,178 @@
+---
+title: "Training on Statistics and Data analysis using R"
+author: "Oluwafemi Oyedele"
+subtitle: "Post Graduate Students CPEB Club, \nUniversity of Ibadan"
+footer:  "[Workshop on Introduction to R](https://github.com/BB1464/CascardiaRConf2022)"
+logo: "img/ui.jpg"
+css: logo.css
+format: 
+   revealjs: 
+    theme: [solarized, slides.scss]
+    highlight-style: a11y
+    transition: fade
+    slide-number: true
+    chalkboard: true
+editor: visual
+execute:
+  freeze: auto
+---
+
+**About me**
+
+::: {.incremental}
+
+::: columns
+::: {.column width="60%"}
+
+-   I am a Agrometeorologist and Crop Simulation modeler
+
+-   I am a mentor of R4DS online learning community
+
+-   I am also a active member of the TidyTuesday project
+
+-   `r fontawesome::fa("linkedin")`: [Oluwafemi Oyedele](https://www.linkedin.com/in/oluwafemioyedele)
+
+-   `r fontawesome::fa("twitter")`: [\@OluwafemOyedele](https://twitter.com/OluwafemOyedele) `r emoji::emoji("thumbsup")`
+
+-   `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/BB1464)
+
+
+-  `r fontawesome::fa("globe")` [bb1464.github.io](https://bb1464.github.io/oluwafemi-oyedele/)
+:::
+
+
+::: {.column width="40%"}
+![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
+:::
+:::
+:::
+
+::: notes
+-   A little bit about myself
+:::
+
+
+
+```{r}
+library(fontawesome)
+library(emoji)
+```
+
+##
+
+#### My R journey (so far) {background-color="#5b868d"}
+
+```{r}
+#| eval: true
+#| echo: false
+#| fig-width: 8
+#| fig-height: 3
+#| fig-align: center
+#| fig-alt: "A stream graph showing the use of R for the author between 2014 and present day. The y-axis represents the general quantity of how often R was used, with no units. An increase is seen from 2019, and then more significantly in the last year."
+library(tibble)
+library(ggplot2)
+library(ggstream)
+library(showtext)
+font_add_google(name = "Lato", family = "lato")
+showtext_auto()
+plot_df <- tibble(date = c(2014:2022, 2022.75), 
+                  value = c(0, 0.3, 0.1, 0.2, 0.3, 0.9, 0.5, 0.8, 0.95, 0.95), 
+                  fill = rep("#12a79d", 10))
+ggplot(data = plot_df, 
+       mapping = aes(x = date, y = value, fill = fill)) +
+  geom_stream(bw = 0.9) +
+  # undergrad
+  geom_errorbar(aes(y = 0.3, xmin = 2014.25, xmax = 2017.5), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2015.8, y = 0.45, label = "Bsc (Soil Science)",
+           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
+  # mres
+  geom_errorbar(aes(y = -0.5, xmin = 2017.75, xmax = 2018.75), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2018.25, y = -0.7, label = "MSc\n(Agrometeorology)",
+           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
+  # phd
+  geom_errorbar(aes(y = -0.5, xmin = 2018.75, xmax = 2021.5), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2020.25, y = -0.7, label = "PhD\n(Soil Science)",
+           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
+  # jr
+  geom_errorbar(aes(y = 0.7, xmin = 2021.8, xmax = 2022.70), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2022.2, y = 0.95, label = "CocoaSoils\nIITA",
+           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
+  labs(x = "", y = "") +
+  scale_fill_identity() +
+  scale_x_continuous(breaks = c(2014:2022), 
+                     limits = c(2013, 2023)) +
+  scale_y_continuous(limits = c(-1.1, 1.1)) +
+  theme_minimal() +
+  theme(legend.position = "none", 
+        plot.background = element_rect(colour = "#dae5e7", fill = "#dae5e7"), 
+        panel.background = element_rect(colour = "#dae5e7", fill = "#dae5e7"), 
+        panel.grid.minor = element_blank(), 
+        panel.grid.major.y = element_blank(),
+        axis.text.y = element_blank(), 
+        axis.text.x = element_text(family = "lato", size = 22, colour = "#5b868d"))
+
+```
+
+##
+
+#### Learning Objectives
+
+::: {.incremental}
+
+-   Introduction to R and R Studio
+
+-   Getting to know vector data in R
+:::
+
+## 
+
+**What is R**
+
+::: columns
+::: {.column width="40%"}
+![](img/rlogo.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="500"}
+:::
+::: {.column width="60%"}
+::: {.incremental}
+-   A widely used programming language for data analysis
+
+-   Based on statistical programming language S (1976)
+
+-   Developed by Ross Ihaka & Robert Gentleman (1995)
+
+-   Very active community, with many (often subject-specific) packages
+
+-   Open source, and interoperable!
+:::
+:::
+:::
+
+
+## 
+
+**What is R Studio**
+
+::: columns
+::: {.column width="40%"}
+![](img/RStudio-Logo.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="500"}
+:::
+::: {.column width="60%"}
+::: {.incremental}
+- Integrated Development Environment (IDE) for R
+
+- Founded by J.J. Allaire, available since 2010
+
+- Bloody useful! Let’s take a look: please open RStudio!
+:::
+:::
+:::
+
+##
+
+### R Studio Interface
+
+::: {layout="[[-1], [1], [-1]]"}
+![](img/rstudio-incremental.png){fig-align="center" width="800"}
+:::
+
+
