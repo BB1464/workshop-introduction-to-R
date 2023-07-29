@@ -31,7 +31,7 @@ Participant that would attend this workshop do not need to have any previous kno
 
 ### CPEB Club, University of Ibadan, 2023
 
-by Oluwafemi Oyedele and Akim Nofiu
+by Oluwafemi Oyedele and Akeem Nofiu
 
 -----
 
