@@ -29,13 +29,18 @@ Participant that would attend this workshop do not need to have any previous kno
 
 ## Schedule
 
-### Saturday 12th August, 2023
+### CPEB Club, University of Ibadan, 2023
 
-| Time              | Activity                               |
-|-------------------|----------------------------------------|
-| 10:00 AM - 3:00 PM | Introduction to R and R Studio        |
+by Oluwafemi Oyedele and Akim Nofiu
 
-: Training on Statistics and Data Analysis using R
+-----
+
+:spiral_calendar: August 12, 19 and 26, 2023
+:alarm_clock:     09:00 AM - 3:00 PM  
+:venue:           University of Ibadan  
+:writing_hand:    [https://bb1464.github.io/workshop-introduction-to-R/](https://bb1464.github.io/workshop-introduction-to-R/)  
+
+-----
 
 ## Presenter
 
