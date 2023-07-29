@@ -47,6 +47,10 @@ by Oluwafemi Oyedele and Akeem Oluwasegun Nofiu
 
 -----
 
+
+R and R Studio can be installed through this link [**here**](https://posit.co/download/rstudio-desktop/)
+
+
 ## Day 1: 12th August, 2023
 
 - Installation of R and R Studio
