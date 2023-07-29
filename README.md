@@ -67,7 +67,7 @@ by Oluwafemi Oyedele and Akeem Oluwasegun Nofiu
 
 - Cluster analysis
 
-## Day 2: 26th August, 2023
+## Day 3: 26th August, 2023
 
 - PCA
 
