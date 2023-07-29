@@ -94,8 +94,8 @@ ggplot(data = plot_df,
   annotate("text", x = 2023.25, y = -0.7, label = "PhD (Soil Science)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # jr
-  geom_errorbar(aes(y = 0.7, xmin = 2021.8, xmax = 2022.70), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2022.2, y = 0.95, label = "CocoaSoils (IITA)",
+  geom_errorbar(aes(y = 0.7, xmin = 2019.8, xmax = 2023.70), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2019.8, y = 0.95, label = "CocoaSoils (IITA)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   labs(x = "", y = "") +
   scale_fill_identity() +
