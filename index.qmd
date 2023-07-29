@@ -36,7 +36,6 @@ execute:
 
 -   `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/workshop-introduction-to-R)
 
-
 -  `r fontawesome::fa("globe")` [bb1464.github.io](https://bb1464.github.io/oluwafemi-oyedele/)
 :::
 
