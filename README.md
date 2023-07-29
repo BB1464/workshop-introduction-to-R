@@ -56,7 +56,7 @@ install.packages(my_packages, repos = "http://cran.rstudio.com")
 <h1 align="center"> CPEB Club, University of Ibadan, 2023!!! </h1>
 
   <p align="center">
-    <img src="https://github.com/BB1464/workshop-introduction-to-R/blob/master/img/rlogo.png" width="60%">
+    <img src="https://github.com/BB1464/workshop-introduction-to-R/blob/master/img/ui.jpg" width="60%">
       </p>
 
 
