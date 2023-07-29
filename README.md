@@ -47,6 +47,35 @@ by Oluwafemi Oyedele and Akeem Oluwasegun Nofiu
 
 -----
 
+## Day 1: 12th August, 2023
+
+- Installation of R and R Studio
+
+-   Introduction to R and R Studio.
+
+- Data summary (Simple Descriptive analysis) 
+
+- Data wrangling
+
+## Day 2: 19th August, 2023
+
+- Design of Experiment (CRD, RCBD, Latin Square Design, Split Plot Design and Alpha Latice Design).
+
+- Linear regression
+
+- Correlation
+
+- Cluster analysis
+
+## Day 2: 26th August, 2023
+
+- PCA
+
+- Data Visualization
+
+- Communication (Report)
+
+
 ## Presenter
 
 **Oluwafemi Oyedele** holds a master Degree in Agrometeorology from the University of Ibadan, Nigeria, and he is currently a research fellow at the International Institute of Tropical Agriculture and he is a data enthusiast.
