@@ -66,7 +66,7 @@ library(emoji)
 #| fig-width: 8
 #| fig-height: 3
 #| fig-align: center
-#| fig-alt: "A stream graph showing the use of R for the author between 2014 and present day. The y-axis represents the general quantity of how often R was used, with no units. An increase is seen from 2019, and then more significantly in the last year."
+#| fig-alt: "A stream graph showing the use of R for the author between 2010 and present day. The y-axis represents the general quantity of how often R was used, with no units. An increase is seen from 2019, and then more significantly in the last year."
 library(tibble)
 library(ggplot2)
 library(ggstream)
@@ -74,32 +74,32 @@ library(showtext)
 font_add_google(name = "Lato", family = "lato")
 showtext_auto()
 
-plot_df <- tibble(date = c(2014:2024, 2024.75), 
-                  value = c(0, 0.3, 0.1, 0.2, 0.3, 0.9, 0.5, 0.8, 0.95, 0.95,0.97,0.98), 
-                  fill = rep("#12a79d", 12))
+plot_df <- tibble(date = c(2010:2023, 2023.75), 
+                  value = c(0, 0.3, 0.1, 0.2, 0.4,0.3, 0.5,0.6,0.7,0.9, 0.5, 0.8, 0.95, 0.95,0.98), 
+                  fill = rep("#12a79d", 15))
 ggplot(data = plot_df, 
        mapping = aes(x = date, y = value, fill = fill)) +
   geom_stream(bw = 0.9) +
   # undergrad
-  geom_errorbar(aes(y = 0.3, xmin = 2014.25, xmax = 2017.5), width = 0.1, colour = "#12a79d") +
+  #geom_errorbar(aes(y = 0.3, xmin = 2010.25, xmax = 2015.5), width = 0.1, colour = "#12a79d") +
   annotate("text", x = 2015.8, y = 0.45, label = "Bsc (Soil Science)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # mres
-  geom_errorbar(aes(y = -0.5, xmin = 2017.75, xmax = 2020.75), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2020.25, y = -0.7, label = "MSc (Agrometeorology)",
+  #geom_errorbar(aes(y = -0.5, xmin = 2019.75, xmax = 2022.75), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2018.25, y = -0.7, label = "MSc (Agrometeorology)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # phd
-  geom_errorbar(aes(y = -0.5, xmin = 2023.75, xmax = 2024.5), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2023.25, y = -0.7, label = "PhD (Soil Science)",
+  #geom_errorbar(aes(y = -0.5, xmin = 2022.75, xmax = 2023.5), width = 0.1, colour = "#12a79d") +
+  annotate("text", x = 2022.25, y = -0.7, label = "PhD (Soil Science)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   # jr
-  geom_errorbar(aes(y = 0.7, xmin = 2019.8, xmax = 2023.70), width = 0.1, colour = "#12a79d") +
+  #geom_errorbar(aes(y = 0.7, xmin = 2019.8, xmax = 2023.70), width = 0.1, colour = "#12a79d") +
   annotate("text", x = 2019.8, y = 0.95, label = "CocoaSoils (IITA)",
            hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
   labs(x = "", y = "") +
   scale_fill_identity() +
-  scale_x_continuous(breaks = c(2014:2024), 
-                     limits = c(2013, 2024)) +
+  scale_x_continuous(breaks = seq(2010,2023,2),
+                     limits = c(2010, 2023)) +
   scale_y_continuous(limits = c(-1.1, 1.1)) +
   theme_minimal() +
   theme(legend.position = "none", 
