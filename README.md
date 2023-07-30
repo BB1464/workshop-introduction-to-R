@@ -1,6 +1,6 @@
 # Training on Statistics and Data Analysis using R
 
-This repository contains the documentation, exercises and datasets of a three day workshop ['Training on Statistics and Data Analysis using R'](https://bb1464.github.io/workshop-introduction-to-R/) at CPEB Club, University of Ibadan, 2023.
+This repository contains the documentation, exercises and datasets of a three day workshop ['Training on Statistics and Data Analysis using R'](https://bb1464.github.io/workshop-introduction-to-R/) at CPEB Club, University of Ibadan, 2023
 
 ## Workshop description
 
