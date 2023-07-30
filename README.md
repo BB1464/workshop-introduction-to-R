@@ -87,12 +87,12 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 
 # Day 3
 
-| Date       | Time | Activities             |
-|------------|------|------------------------|
-| 2023-08-26 |      | Recap and Questions    |
-| 2023-08-26 |      | PCA                    |
-| 2023-08-26 |      | Data Visualization     |
-| 2023-08-26 |      | Communication (Report) |
+| Date       | Time                | Activities             |
+|------------|---------------------|------------------------|
+| 2023-08-26 | 10:00 AM to 3:00 PM | Recap and Questions    |
+| 2023-08-26 | 10:00 AM to 3:00 PM | PCA                    |
+| 2023-08-26 | 10:00 AM to 3:00 PM | Data Visualization     |
+| 2023-08-26 | 10:00 AM to 3:00 PM | Communication (Report) |
 
 ## Presenter
 
