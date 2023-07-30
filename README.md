@@ -66,14 +66,14 @@ Information on how to install these (and troubleshoot the installation) is on ou
 
 R and R Studio can be installed through this link [**here**](https://posit.co/download/rstudio-desktop/)
 
+# Day 1
+
 | Date       | Time                | Activities                                 |
 |------------|---------------------|--------------------------------------------|
 | 2023-08-12 | 10:00 AM to 3:00 PM | Installation of R and R Studio             |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Introduction to R and RStudio              |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data summary (Simple Descriptive analysis) |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data Wrangling                             |
-
-: Day 1:
 
 | Date       | Time                | Activities                                                                                       |
 |-------------|-------------|-----------------------------------------------|
