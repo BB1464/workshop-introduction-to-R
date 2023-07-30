@@ -90,7 +90,6 @@ R and R Studio can be installed through this link
 | 2023-08-12 | 10:00 AM to 3:00 PM | Introduction to R and R Studio             |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data summary (Simple Descriptive analysis) |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data wrangling                             |
-
 : Day 1:
 
 | Date       | Time                | Activities                                                                                       |
