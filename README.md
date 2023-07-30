@@ -75,6 +75,8 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data summary (Simple Descriptive analysis) |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data Wrangling                             |
 
+# Day 2
+
 | Date       | Time                | Activities                                                                                       |
 |-------------|-------------|-----------------------------------------------|
 | 2023-08-19 | 10:00 AM to 3:00 PM | Recap and Questions                                                                              |
@@ -83,7 +85,7 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 | 2023-08-19 | 10:00 AM to 3:00 PM | Correlation                                                                                      |
 | 2023-08-19 | 10:00 AM to 3:00 PM | Cluster Analysis                                                                                 |
 
-: Day 2:
+# Day 3
 
 | Date       | Time | Activities             |
 |------------|------|------------------------|
@@ -91,8 +93,6 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 | 2023-08-26 |      | PCA                    |
 | 2023-08-26 |      | Data Visualization     |
 | 2023-08-26 |      | Communication (Report) |
-
-: Day 3:
 
 ## Presenter
 
