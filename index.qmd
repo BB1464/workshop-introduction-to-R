@@ -1,7 +1,7 @@
 ---
 title: "Training on Statistics and Data Analysis using R"
 author: "Oluwafemi Oyedele"
-subtitle: "Post Graduate Students CPEB Club, \nUniversity of Ibadan"
+subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
 footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
 logo: "img/ui.jpg"
 css: logo.css
