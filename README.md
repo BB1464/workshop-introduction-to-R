@@ -1,9 +1,3 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # Training on Statistics and Data Analysis using R
 
 This repository contains the documentation, exercises and datasets of a

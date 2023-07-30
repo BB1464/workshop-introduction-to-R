@@ -19,13 +19,13 @@ I.e. a laptop *with* administrator rights.
 2) Open **RStudio**
 
 ## Install Tidyverse from Rstudio
-From the console:
+**From the console:**
 1) Open Rstudio.
 2) Look for a window that says "console" (probably bottom left of your screen). 
 3) In the console, type: install.packages("tidyverse")
 4) hit 'enter'.
 
-You can also install using the RStudio GUI:
+**You can also install using the RStudio GUI:**
 1) Open Rstudio.
 2) At the window on the bottom right of your screen, select the tab "packages".
 3) Click "install" and type "tidyverse" in the box. 
@@ -56,11 +56,11 @@ You should see something that looks like this:
 
 This can cause various errors, and even if everything goes right, installing tidyverse takes ages.
 
-Solution 1: 
+**Solution 1: **
 
 - There is a solution to prevent problems with mounted drives for applications like R, RStudio and Office. Read more about the solution on intranet. https://intranet.uu.nl/en/current-affairs/announcements/would-you-make-your-solis-laptop-work-more-efficiently
 
-Solution 2:
+**Solution 2:**
 
 - Create a folder `R-packages` on a local drive. 
 - Copy the location to that drive. For example: `C:/Users/User/R-packages`.
