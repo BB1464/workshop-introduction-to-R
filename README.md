@@ -8,11 +8,19 @@ R is a powerful programming language for data handling, data visualization, and 
 
 The course will take you from the very basics in R syntax, to data handling and visualization using a set of packages designed for data science, known as the 'tidyverse'. We will also take some time to understand datasets and their architecture, preparing you to handle your own data in a clean, robust, and reproducible manner. We will work in RStudio and introduce R scripts as well as the R Markdown format along side with quarto: the latter is a great way to combine code and its output with text, allowing you to code in a narrative and intuitive way. Moreover, this way you produce a human-readable document with which you can easily share and showcase your work.
 
+# Pre-Requisite for Attending this Training
+
+-   You need to have a laptop
+
+-   You need to have internet connection to Install R, R Studio and all the required packages.
+
 **Learning objectives**:
 
 -   Installation of R and R Studio
 
 -   Introduction to R and R Studio.
+
+-   Data Import and Export
 
 -   Data summary (Simple Descriptive analysis)
 
@@ -72,13 +80,14 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 |------------|---------------------|--------------------------------------------|
 | 2023-08-12 | 10:00 AM to 3:00 PM | Installation of R and R Studio             |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Introduction to R and RStudio              |
+| 2023-08-12 | 10:00 AM to 3:00 PM | Data Import and Export                     |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data summary (Simple Descriptive analysis) |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data Wrangling                             |
 
 # Day 2
 
 | Date       | Time                | Activities                                                                                       |
-|-------------|-------------|-----------------------------------------------|
+|------------|---------------------|--------------------------------------------------------------------------------------------------|
 | 2023-08-19 | 10:00 AM to 3:00 PM | Recap and Questions                                                                              |
 | 2023-08-19 | 10:00 AM to 3:00 PM | Design of Experiment (CRD, RCBD, Latin Square Design, Split Plot Design and Alpha Latice Design) |
 | 2023-08-19 | 10:00 AM to 3:00 PM | Linear regression                                                                                |
@@ -102,7 +111,9 @@ The slides can be found [**here**](https://bb1464.github.io/workshop-introductio
 
 ## Packages
 
-my_packages \<- c("tidyverse","readxl", "factoextra","agricolae","agridat", "lmerTest","lme4","sjPlot", "skimr","ggtext","extrafont","correlation","metan", "fontawesome","emoji","devtools")
+my_packages \<- c("tidyverse","readxl", "factoextra","agricolae","agridat", "lmerTest","lme4","sjPlot", "skimr","ggtext","extrafont","correlation","metan", "fontawesome","emoji","devtools","correlationfunnel","writexl")
+
+devtools::install_github("agstn/dataxray")
 
 install.packages(my_packages, repos = "<http://cran.rstudio.com>")
 

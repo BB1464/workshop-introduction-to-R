@@ -2,6 +2,7 @@
 title: "Training on Statistics and Data Analysis using R"
 author: "Oluwafemi Oyedele"
 subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
+date: "2023-08-12"
 footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
 logo: "img/ui.jpg"
 css: logo.css
@@ -11,7 +12,14 @@ format:
     highlight-style: a11y
     transition: fade
     slide-number: true
+    show-slide-number: all
     chalkboard: true
+    code-annotations: hover
+    #multiplex: true
+    #slide-tone: false
+    #auto-slide: 2000
+    #loop: true
+    #footer: https://bb1464.github.io/workshop-introduction-to-R/
 editor: visual
 execute:
   freeze: auto
@@ -55,65 +63,11 @@ execute:
 library(fontawesome)
 library(emoji)
 ```
-
-##
-
-#### My R journey (so far) {background-color="#5b868d"}
-
-```{r}
-#| eval: true
-#| echo: false
-#| fig-width: 8
-#| fig-height: 3
-#| fig-align: center
-#| fig-alt: "A stream graph showing the use of R for the author between 2010 and present day. The y-axis represents the general quantity of how often R was used, with no units. An increase is seen from 2019, and then more significantly in the last year."
-library(tibble)
-library(ggplot2)
-library(ggstream)
-library(showtext)
-font_add_google(name = "Lato", family = "lato")
-showtext_auto()
-
-plot_df <- tibble(date = c(2010:2023, 2023.75), 
-                  value = c(0, 0.3, 0.1, 0.2, 0.4,0.3, 0.5,0.6,0.7,0.9, 0.5, 0.8, 0.95, 0.95,0.98), 
-                  fill = rep("#12a79d", 15))
-ggplot(data = plot_df, 
-       mapping = aes(x = date, y = value, fill = fill)) +
-  geom_stream(bw = 0.9) +
-  # undergrad
-  #geom_errorbar(aes(y = 0.3, xmin = 2010.25, xmax = 2015.5), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2015.8, y = 0.45, label = "Bsc (Soil Science)",
-           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
-  # mres
-  #geom_errorbar(aes(y = -0.5, xmin = 2019.75, xmax = 2022.75), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2018.25, y = -0.7, label = "MSc (Agrometeorology)",
-           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
-  # phd
-  #geom_errorbar(aes(y = -0.5, xmin = 2022.75, xmax = 2023.5), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2022.25, y = -0.7, label = "PhD (Soil Science)",
-           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
-  # jr
-  #geom_errorbar(aes(y = 0.7, xmin = 2019.8, xmax = 2023.70), width = 0.1, colour = "#12a79d") +
-  annotate("text", x = 2019.8, y = 0.95, label = "CocoaSoils (IITA)",
-           hjust = 0.5, family = "lato", size = 8, lineheight = 0.4, colour = "#5b868d") +
-  labs(x = "", y = "") +
-  scale_fill_identity() +
-  scale_x_continuous(breaks = seq(2010,2023,2),
-                     limits = c(2010, 2023)) +
-  scale_y_continuous(limits = c(-1.1, 1.1)) +
-  theme_minimal() +
-  theme(legend.position = "none", 
-        plot.background = element_rect(colour = "#dae5e7", fill = "#dae5e7"), 
-        panel.background = element_rect(colour = "#dae5e7", fill = "#dae5e7"), 
-        panel.grid.minor = element_blank(), 
-        panel.grid.major.y = element_blank(),
-        axis.text.y = element_blank(), 
-        axis.text.x = element_text(family = "lato", size = 22, colour = "#5b868d"))
-
+# My R journey (so far) 
+```{r,fig.align='center'}
+knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 ```
-
 ##
-
 #### Learning Objectives
 
 ::: {.incremental}
@@ -121,7 +75,9 @@ ggplot(data = plot_df,
 - Installation of R and R Studio
 
 
--   Introduction to R and R Studio.
+- Introduction to R and R Studio.
+
+- Data Import and Export
 
 - Data summary (Simple Descriptive analysis) 
 
@@ -174,6 +130,20 @@ ggplot(data = plot_df,
 
 ## 
 
+#### **If one already knows Stata or similar software, why use R?**
+ 
+::: {.incremental}
+- R is *free*, so you don't need a terminal server
+
+- R has a *very* large community.
+
+- R can handle virtually any data format.
+
+- R makes replication easy.
+
+:::
+##
+
 **What is R Studio**
 
 ::: columns
@@ -182,7 +152,7 @@ ggplot(data = plot_df,
 :::
 ::: {.column width="60%"}
 ::: {.incremental}
-- Integrated Development Environment (IDE) for R
+- Integrated Development Environment (IDE) for R that can make your life *easier*.
 
 - Founded by J.J. Allaire, available since 2010
 
@@ -193,10 +163,332 @@ ggplot(data = plot_df,
 
 ##
 
+#### **RStudio can:**
+ 
+::: {.incremental}
+- organize your code, output, and plots.
+
+- Auto-complete code and highlight syntax.
+
+- Help view data and objects.
+
+- Enable easy integration of R code into documents.
+:::
+ 
+##
+
+#### **Installation of R and R Studio**
+
+- We can install R and RStudio from [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
+
+- Installation of R Packages
+
+
+##
+
 ### R Studio Interface
 
 ::: {layout="[[-1], [1], [-1]]"}
 ![](img/rstudio-incremental.png){fig-align="center" width="800"}
 :::
 
+
+##
+
+#### **Demonstration**
+
+::: {.incremental}
+- Demontration on the various tabs found in R and R Studio.
+:::
+
+##
+#### Data Science Workflow in R by (Hadley Wickham)
+
+![](img/data-science-workflow.png)
+
+##
+#### Data Import
+```{r}
+#| echo: true
+#| code-line-numbers: "0|1|3|5|7"
+#| eval: true
+
+
+library(tidyverse) # data wrangling and cleaning
+
+library(here)  # For Easy Navigation of file path
+
+library(readxl) # To import excel file into R
+
+library(skimr) # For summary statistics
+```
+
+::: {.incremental}
+- To read in a csv file into R we will use `read_csv` 
+
+- To read in an excel file into R we will use `read_excel`
+
+- To write a csv file to disc we will use `write_csv`
+
+- To write a excel file to disc we will use `write_xlsx` from `writexl package`
+:::
+
+##
+
+::: {.panel-tabset}
+
+### Data Import
+
+```{r sorghum_dataset}
+#| echo: true
+#| code-line-numbers: "0|1"
+
+sorghum<-read_csv(here::here('data/sorghum.csv')) 
+
+# Congratulation you have successfully read a csv file into R and we assigned it to an object called sorghum
+```
+### Table 
+
+```{r table}
+#| echo: true
+#| code-line-numbers: "0|1|2|3|4"
+
+sorghum %>% 
+  head(2)
+sorghum %>% 
+  tail(2)
+#- Import sorghum.xlsx into RStudio
+```
+:::
+
+##
+#### Data Import Practicals
+
+- Import sorghum.xlsx into RStudio and assigned it to an object called sorghnum_dat.
+
+- View the first 6 rows of the dataset.
+
+##
+#### Data Wrangling
+
+![](img/tidydata.png)
+
+- **In tidy data:**
+
+ - Each variable forms a column
+ 
+ - Each observation forms a row
+ 
+##
+#### Summary Statistics of the dataset
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2"
+library(skimr)
+output <- skim(iris)
+```
+
+
+### Result
+
+```{r}
+print(output)
+# - I found this to be very useful when performing EDA but we will explore other options during data viz.
+```
+:::
+
+##
+#### Data Transformation
+
+- There are five key dplyr functions in tidyverse to solve most of data manipulation challenges:
+
+    * Pick observations by their values – `filter()`
+
+    * Reorder (sort) the rows – `arrange()`
+
+    * Pick variables by their names – `select()`
+
+    * Create new variables with functions of existing variables – `mutate()`
+
+    * Collapse many values down to a summary – `summarize()`
+
+##
+
+#### Data Transformation: Filter
+
+- `filter()` allows to subset observations based on their values
+
+- `filter(data, expressions)`
+
+- The first argument is the name of the data frame
+The second and subsequent arguments are the expressions that filter the
+data frame
+
+- Demonstration on the `filter function`
+
+##
+
+#### Data Transformation: Filter
+
+::: {.panel-tabset}
+
+### Filter 
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2|3"
+
+sorghum <- read.csv(file = here::here('data/sorghum.csv'))
+
+head(sorghum)
+
+```
+
+
+### Output
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2"
+
+sorghum %>% 
+  filter(env=='E1')
+
+```
+
+:::
+
+##
+#### Data Transformation: Filter
+
+- What does the following command do?
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|3"
+sorghum <- read.csv(file = here::here('data/sorghum.csv'))
+
+filter(sorghum, env %in% c('E1','E2'))
+```
+
+##
+
+#### Data Transformation: `Filter` Practical `5 minutes`
+
+- import `mtcars.csv` data into RStudio
+
+- `filter` for `mpg<20` and `gear==4`
+
+##
+
+#### Data Transformation: Arrange
+
+- `arrange()` changes the order of the rows (sorting): it takes a data frame and a set of column names to order by
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1"
+head(arrange(mtcars, mpg),10)
+```
+
+##
+
+#### Data Transformation: Arrange
+
+We can use the function desc() to re-order by a column in descending
+order
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1"
+arrange(mtcars, desc(mpg))
+
+```
+
+##
+#### Data Transformation: `Select`
+
+- Select help us to pick variable by their position or name in a `dataframe`.
+
+- We can also used other `select` helpers function like `start_with`, `end_with` and `everything`
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2"
+mtcars_demo <- select(mtcars, mpg, cyl, disp)
+mtcars_demo
+```
+
+##
+
+#### Data Transformation: `Mutate`
+
+- We can add new columns that are functions of existing columns with `mutate()` which always adds new columns at the end of the dataset
+
+```{r}
+mtcars %>% 
+  mutate(mpg_trans=log10(mpg)) %>% 
+  head(10)
+```
+
+##
+
+Data Transformation: `Summaries`
+
+- `summarize()` collapses a data frame to a single or few row(s)
+
+```{r}
+summarize(mtcars, mpg_mean = mean(mpg, na.rm = TRUE))
+```
+- `summarize()` is useful with `group_by()`
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2"
+by_treatment <- group_by(iris, Species)
+summarise(by_treatment, Sepal.Length_mean = mean(Sepal.Length, na.rm = TRUE))
+```
+##
+
+#### Data Transformation: The pipe `%>%`
+
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2|3"
+iris %>%
+group_by(Species) %>%
+summarise(mean_Sepal.Length = mean(Sepal.Length, na.rm = TRUE))
+```
+
+##
+
+#### Data Transformation: Count
+```{r}
+#| echo: true
+#| code-line-numbers: "1|2|3"
+iris %>%
+group_by(Species) %>%
+summarise(n = n())
+```
+
+##
+
+#### Data Wrangling: Practical
+
+- Import `sorghum.xlsx` to R and save to an object
+named example03
+
+- How many observations do we have per environment?
+
+- How many `environment?` `genotypes?` Display the list of locations and the list of `genotypes respectively?`
+
+- Display the data where the `yield was less than 150?`
+
+- Select `env`, `gen`, `yield`, to be saved in a new object `example03.short` and create a new variable
+`mean_yield` by by computing the mean of the `yield.`
 
