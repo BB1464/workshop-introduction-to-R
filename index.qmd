@@ -5,7 +5,7 @@ subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
 date: "2023-08-12"
 footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
 logo: "img/ui.jpg"
-css: logo.css
+#css: logo.css
 format: 
    revealjs: 
     theme: [solarized, slides.scss]
@@ -264,7 +264,7 @@ sorghum %>%
 ##
 #### Data Import Practicals
 
-- Import sorghum.xlsx into RStudio and assigned it to an object called sorghnum_dat.
+- Import `sorghum.xlsx` into RStudio and assigned it to an object called `sorghnum_dat.`
 
 - View the first 6 rows of the dataset.
 
@@ -492,3 +492,40 @@ named example03
 - Select `env`, `gen`, `yield`, to be saved in a new object `example03.short` and create a new variable
 `mean_yield` by by computing the mean of the `yield.`
 
+##
+#### Resources to Learn More
+
+[R4DS Book](https://r4ds.hadley.nz/)
+
+[ModernDive](https://moderndive.netlify.app)
+
+[BigBookofR](https://www.bigbookofr.com)
+
+[ggplot2](https://ggplot2-book.org/index.html)
+
+
+
+##
+#### **QUESTIONS?**
+
+::: {.incremental}
+
+::: columns
+::: {.column width="60%"}
+
+-   `r fontawesome::fa("linkedin")`: [Oluwafemi Oyedele](https://www.linkedin.com/in/oluwafemioyedele)
+
+-   `r fontawesome::fa("twitter")`: [\@OluwafemOyedele](https://twitter.com/OluwafemOyedele) `r emoji::emoji("thumbsup")`
+
+-   `r fontawesome::fa("github")` [github.com/BB1464](https://github.com/BB1464/workshop-introduction-to-R)
+
+-  `r fontawesome::fa("globe")` [bb1464.github.io](https://bb1464.github.io/oluwafemi-oyedele/)
+
+-  `r fontawesome::fa("briefcase")` [r4ds-slack-channel](http://r4ds.io/join)
+:::
+
+::: {.column width="40%"}
+![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
+:::
+:::
+:::

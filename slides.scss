@@ -9,6 +9,14 @@ $body-color: #FFFFFF;
 $link-color: #C7B41D;
 $presentation-font-size-root: 40px;
 
+
+// code
+$code-color: #FFFFFF !default;
+$code-block-font-size: 0.6em;
+$code-block-border-color: #d4d0ab;
+$code-block-bg: #343838;
+
+
 // headings
 $h1-font-size: 1.6em !default;
 $h2-font-size: 1.3em !default;
@@ -108,4 +116,11 @@ $h3-font-size: 1.15em !default;
   color: #000000;
   font-family: $font-family-monospace;
   font-size: 1em;
+}
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
 }
