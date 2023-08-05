@@ -5,6 +5,7 @@ subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
 date: "2023-08-12"
 footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
 logo: "img/ui.jpg"
+auto-stretch: false
 #css: logo.css
 format: 
    revealjs: 
@@ -32,9 +33,9 @@ execute:
 ::: columns
 ::: {.column width="60%"}
 
--   I am an Agrometeorologist and Crop Simulation modeler
+-   I am an Agrometeorologist and Processed-Based Modeller
 
--   I am a mentor of R4DS online learning community
+-   I am a mentor in the R4DS online learning community
 
 -   I am also a active member of the TidyTuesday project
 
@@ -54,7 +55,8 @@ execute:
 :::
 
 ::: notes
--   A little bit about myself
+-   I am an Agrometeorologist with a bit of background in Crop modelling
+
 :::
 
 
@@ -63,12 +65,12 @@ execute:
 library(fontawesome)
 library(emoji)
 ```
-# My R journey (so far) 
+## My R journey (so far) 
 ```{r,fig.align='center',out.height='450px',out.width='500px'}
 knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 ```
-##
-#### Learning Objectives
+
+## Learning Objectives
 
 ::: {.incremental}
 
@@ -88,14 +90,15 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 - Linear regression
 
 - Correlation
-
-- Cluster analysis
 :::
 
-##
-#### Learning Objectives Continued
+
+## Learning Objectives Continued
 
 ::: {.incremental}
+
+- Cluster analysis
+
 - PCA
 
 - Data Visualization
@@ -103,10 +106,24 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 - Communication (Report)
 :::
 
+## Installation
+![](img/installation.png)
 
-## 
+## **Install R and R Studio**
 
-**What is R**
+
+::: {.columns}
+::: {.column width='35%'}
+
+- The first thing you need to do is download the R and R Studio software. Go to the [(https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/) and download the software for your operating system (Windows, Mac, or Linux).
+:::
+
+::: {.column width='65%'}
+![](img/install_R.png){style="float:right;padding: 0 0 0 5px;" fig-alt="Headshot of Dr. Maria Tackett" width="370"}
+:::
+::: 
+
+## **What is R**
 
 ::: columns
 ::: {.column width="40%"}
@@ -127,10 +144,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 :::
 :::
 
-
-## 
-
-#### **If one already knows Stata or similar software, why use R?**
+## **If one already knows Stata or similar software, why use R?**
  
 ::: {.incremental}
 - R is *free*, so you don't need a terminal server
@@ -142,9 +156,9 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 - R makes replication easy.
 
 :::
-##
 
-**What is R Studio**
+
+## **What is R Studio**
 
 ::: columns
 ::: {.column width="40%"}
@@ -161,9 +175,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 :::
 :::
 
-##
-
-#### **RStudio can:**
+## **RStudio can:**
  
 ::: {.incremental}
 - organize your code, output, and plots.
@@ -174,40 +186,260 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 
 - Enable easy integration of R code into documents.
 :::
- 
-##
 
-#### **Installation of R and R Studio**
-
-- We can install R and RStudio from [https://posit.co/download/rstudio-desktop/](https://posit.co/download/rstudio-desktop/)
-
-- Installation of R Packages
-
-
-##
-
-### R Studio Interface
+## R Studio Interface
 
 ::: {layout="[[-1], [1], [-1]]"}
 ![](img/rstudio-incremental.png){fig-align="center" width="800"}
 :::
 
-
-##
-
-#### **Demonstration**
+## **Demonstration**
 
 ::: {.incremental}
 - Demontration on the various tabs found in R and R Studio.
 :::
 
-##
-#### Data Science Workflow in R by (Hadley Wickham)
+
+## **Working Directly in R**
+
+1. Enter: 2 + 2
+
+2. Hit return
+
+3. View result
+
+
+## Your Turn
+
+::: {.incremental}
+- Open R
+
+- Use any mathematical operators (+, -, /, and *) to create an expression and make sure it works as expected
+:::
+
+## **R Studio Projects**
+
+::: {.incremental}
+- RStudio projects allow you to keep a collection of files all together, including: 
+
+- R scripts
+
+- Quarto and Rmarkdown files (more on those soon)
+
+- Data files
+
+- And much more!
+:::
+
+## **How to Create a Project**
+
+- File -> New Project
+
+- Give the project a unique name
+
+- Set the directry where you want to put the project.
+
+- Quit RStudio, Double-click .Rproj file to reopen project
+
+
+## **Your Turn**
+
+::: {.incremental}
+
+1. Create a new project (doesn't matter if it's in a new or existing directory
+
+
+2. Quit RStudio, double-click the .Rproj file and reopen your project
+
+:::
+
+
+
+## **Download Training Project**
+
+:::{.incremental}
+- Enter the following into the RStudio console pane:
+:::
+
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1|2|3"
+install.packages("usethis")
+library(usethis) # This line loads the usethis package into R memory
+use_course("https://github.com/BB1464/workshop-introduction-to-R.git") # this line will pull all the source code from my github repo into your system.
+
+```
+:::{.incremental}
+- You'll now have a copy of the project created for this training that we'll use from here on out
+:::
+
+## File Types in R
+There are **two main file types** that you'll work with: 
+
+::: {.incremental}
+
+::: columns
+::: {.column width="50%"}
+
+- **R scripts (.R)**
+
+- Text is assumed to be executable R code unless you comment it (more on this soon)
+
+- **Quarto files (.qmd)**
+
+- Text is assumed to be text unless you put it in a code chunk (more on this soon)
+:::
+
+::: {.column width="50%"}
+![](img/code-chunk.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
+:::
+:::
+:::
+
+## **R Scripts**
+
+:::{.incremental}
+- Create new script file: File -> New File -> R Script
+:::
+
+![](img/new-script.gif)
+
+
+## **How to Run Code**
+
+:::{.incremental}
+
+- Run the code: control + enter on Windows,  command + enter on Mac keystrokes or use Run button
+:::
+
+![](img/run-code.gif)
+
+
+## **How to Run Code Continuation**
+
+:::{.incremental}
+
+- Note that you don't have to highlight code. 
+
+- You can just hit run anywhere on line to run code. 
+:::
+
+## **Comments**
+- Do them for others, and for your future self.
+```{r}
+#| echo: true
+#| eval: false
+
+# This is a comment
+
+head(data, n = 5)
+
+```
+
+## **Packages**
+
+:::{.incremental}
+
+::: {.columns}
+::: {.column width='60%'}
+- Packages add functionality that is not present in base R. 
+
+- They're where much of the power of R is found.
+:::
+
+::: {.column width='40%'}
+![](img/phone-apps.png){style="float:right;padding: 0 0 0 10px;"width="300"}
+:::
+:::
+:::
+
+## **Packages We'll Use**
+
+::: {.columns}
+::: {.column width='40%'}
+![](img/tidyverse.png)
+:::
+
+::: {.column width='60%'}
+
+### `tidyverse`
+
+:::{.incremental}
+- The [`tidyverse`](https://tidyverse.org/) is a collection of packages. 
+
+- We'll use [`readr`](https://readr.tidyverse.org/) to import data.
+
+:::
+:::
+:::
+
+## **Packages We'll Use**
+
+::: {.columns}
+::: {.column width='40%'}
+![](img/skimr.png)
+:::
+
+
+::: {.column width='60%'}
+
+### `skimr`
+:::{.incremental}
+- [`skimr`](https://github.com/ropensci/skimr) provides easy summary statistics.
+:::
+:::
+:::
+
+## **Install Packages**
+- The syntax to install packages is as follows. 
+```{r}
+#| eval: false
+#| echo: true
+#| code-line-numbers: "1|2"
+install.packages("tidyverse")
+install.packages("skimr")
+
+```
+- The package name must be in quotes.
+
+- Packages should be installed **once per computer** (i.e. once you've installed a package, you don't need to do it again on the same computer).
+
+
+## **Load Packages**
+
+- To load packages, use the following syntax:
+
+```{r}
+#| eval: true
+#| echo: true
+
+
+library(tidyverse)
+library(skimr)
+
+```
+- Package names don't need to be quoted here (though they can be).
+
+- Packages should be loaded **once per session** (i.e. every time you start working in R, you need to load any packages you want to use). 
+
+
+## **Your Turn**
+
+- Open the project you downloaded before (it should be on your desktop)
+
+- Open the readme.md file
+
+- Install install all the packages
+
+- Load the **tidyverse** and **skimr** packages using the **library function**
+
+## **Data Science Workflow in R by (Hadley Wickham)**
 
 ![](img/data-science-workflow.png)
 
-##
-#### Data Import
+
+## Data Import
 ```{r}
 #| echo: true
 #| code-line-numbers: "0|1|3|5|7"
@@ -237,7 +469,7 @@ library(skimr) # For summary statistics
 
 ::: {.panel-tabset}
 
-### Data Import
+## Data Import
 
 ```{r sorghum_dataset}
 #| echo: true
@@ -247,7 +479,7 @@ sorghum<-read_csv(here::here('data/sorghum.csv'))
 
 # Congratulation you have successfully read a csv file into R and we assigned it to an object called sorghum
 ```
-### Table 
+## Table 
 
 ```{r table}
 #| echo: true
@@ -261,30 +493,42 @@ sorghum %>%
 ```
 :::
 
-##
-#### Data Import Practicals
+
+## Data Import Practicals
 
 - Import `sorghum.xlsx` into RStudio and assigned it to an object called `sorghnum_dat.`
 
 - View the first 6 rows of the dataset.
 
-##
-#### Data Wrangling
+
+## **Data Types**
+
+:::{.incremental}
+
+- **Double/Numeric** (e.g. 2.5)
+
+- **Character** (e.g. "Male")
+
+- **Logical** (e.g. "TRUE and FALSE")
+:::
+
+## Data Wrangling
 
 ![](img/tidydata.png)
 
 - **In tidy data:**
 
- - Each variable forms a column
+:::{.incremental}
+- Each variable forms a column
  
- - Each observation forms a row
- 
-##
-#### Summary Statistics of the dataset
+- Each observation forms a row
+::: 
+
+## Summary Statistics of the dataset
 
 ::: {.panel-tabset}
 
-### Code
+## Code
 
 ```{r}
 #| echo: true
@@ -294,7 +538,7 @@ output <- skim(iris)
 ```
 
 
-### Result
+## Result
 
 ```{r}
 print(output)
@@ -302,24 +546,28 @@ print(output)
 ```
 :::
 
-##
-#### Data Transformation
+
+## Data Transformation
+
+:::{.incremental}  
 
 - There are five key dplyr functions in tidyverse to solve most of data manipulation challenges:
 
-    * Pick observations by their values – `filter()`
+- Pick observations by their values – `filter()`
 
-    * Reorder (sort) the rows – `arrange()`
+- Reorder (sort) the rows – `arrange()`
 
-    * Pick variables by their names – `select()`
+- Pick variables by their names – `select()`
 
-    * Create new variables with functions of existing variables – `mutate()`
+- Create new variables with functions of existing variables – `mutate()`
 
-    * Collapse many values down to a summary – `summarize()`
+- Collapse many values down to a summary – `summarize()`
+:::
 
-##
 
-#### Data Transformation: Filter
+## Data Transformation: Filter
+
+:::{.incremental}
 
 - `filter()` allows to subset observations based on their values
 
@@ -328,16 +576,14 @@ print(output)
 - The first argument is the name of the data frame
 The second and subsequent arguments are the expressions that filter the
 data frame
+:::
 
-- Demonstration on the `filter function`
 
-##
-
-#### Data Transformation: Filter
+## Data Transformation: Filter
 
 ::: {.panel-tabset}
 
-### Filter 
+## Filter 
 
 ```{r}
 #| echo: true
@@ -350,7 +596,7 @@ head(sorghum)
 ```
 
 
-### Output
+## Output
 
 ```{r}
 #| echo: true
@@ -363,8 +609,8 @@ sorghum %>%
 
 :::
 
-##
-#### Data Transformation: Filter
+
+## Data Transformation: Filter
 
 - What does the following command do?
 
@@ -376,17 +622,17 @@ sorghum <- read.csv(file = here::here('data/sorghum.csv'))
 filter(sorghum, env %in% c('E1','E2'))
 ```
 
-##
 
-#### Data Transformation: `Filter` Practical `5 minutes`
+
+## Data Transformation: `Filter` Practical `5 minutes`
 
 - import `mtcars.csv` data into RStudio
 
 - `filter` for `mpg<20` and `gear==4`
 
-##
 
-#### Data Transformation: Arrange
+
+## Data Transformation: Arrange
 
 - `arrange()` changes the order of the rows (sorting): it takes a data frame and a set of column names to order by
 
@@ -396,9 +642,9 @@ filter(sorghum, env %in% c('E1','E2'))
 head(arrange(mtcars, mpg),10)
 ```
 
-##
 
-#### Data Transformation: Arrange
+
+## Data Transformation: Arrange
 
 We can use the function desc() to re-order by a column in descending
 order
@@ -410,8 +656,8 @@ arrange(mtcars, desc(mpg))
 
 ```
 
-##
-#### Data Transformation: `Select`
+
+## Data Transformation: `Select`
 
 - Select help us to pick variable by their position or name in a `dataframe`.
 
@@ -424,9 +670,9 @@ mtcars_demo <- select(mtcars, mpg, cyl, disp)
 mtcars_demo
 ```
 
-##
 
-#### Data Transformation: `Mutate`
+
+## Data Transformation: `Mutate`
 
 - We can add new columns that are functions of existing columns with `mutate()` which always adds new columns at the end of the dataset
 
@@ -436,9 +682,9 @@ mtcars %>%
   head(10)
 ```
 
-##
 
-Data Transformation: `Summaries`
+
+## Data Transformation: `Summaries`
 
 - `summarize()` collapses a data frame to a single or few row(s)
 
@@ -453,9 +699,9 @@ summarize(mtcars, mpg_mean = mean(mpg, na.rm = TRUE))
 by_treatment <- group_by(iris, Species)
 summarise(by_treatment, Sepal.Length_mean = mean(Sepal.Length, na.rm = TRUE))
 ```
-##
 
-#### Data Transformation: The pipe `%>%`
+
+## Data Transformation: The pipe `%>%`
 
 ```{r}
 #| echo: true
@@ -465,9 +711,7 @@ group_by(Species) %>%
 summarise(mean_Sepal.Length = mean(Sepal.Length, na.rm = TRUE))
 ```
 
-##
-
-#### Data Transformation: Count
+## Data Transformation: Count
 ```{r}
 #| echo: true
 #| code-line-numbers: "1|2|3"
@@ -476,9 +720,7 @@ group_by(Species) %>%
 summarise(n = n())
 ```
 
-##
-
-#### Data Wrangling: Practical
+## Data Wrangling: Practical
 
 - Import `sorghum.xlsx` to R and save to an object
 named example03
@@ -492,6 +734,44 @@ named example03
 - Select `env`, `gen`, `yield`, to be saved in a new object `example03.short` and create a new variable
 `mean_yield` by by computing the mean of the `yield.`
 
+
+## **Getting Help**
+
+- We can use the ? to get help about anything we are confused about in R.
+
+```{r}
+#| echo: true
+#| eval: false
+?read_csv
+
+```
+
+## Tidyverse Website
+
+![](img/tidyverse-website.gif)(https://www.tidyverse.org/)
+
+## Package Vignettes
+
+![](img/skimr-vignette.gif)
+(https://cran.r-project.org/web/packages/skimr/vignettes/Using_skimr.html)
+
+
+## Twitter
+
+![](img/rstats-twitter.gif)(https://twitter.com/search?q=%23rstats)
+
+
+## **R for Data Science Community**
+
+```{r,fig.align='center',fig.height=20,fig.width=15}
+knitr::include_graphics(path = here::here('img/r4ds-website.png'))
+```
+
+
+## Google
+
+![](img/programming-google.png)(https://twitter.com/ekaleedmiston/status/1081221822186696706)
+
 ##
 #### Resources to Learn More
 
@@ -503,10 +783,9 @@ named example03
 
 [ggplot2](https://ggplot2-book.org/index.html)
 
+[RLadies Video Feed on YouTube](https://ivelasq.github.io/rladies-video-feed/)
 
-
-##
-#### **QUESTIONS?**
+## **QUESTIONS?**
 
 ::: {.incremental}
 
