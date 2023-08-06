@@ -510,7 +510,7 @@ Oluwafemi Oyedele
 <li class="fragment"><p>A widely used programming language for data analysis</p></li>
 <li class="fragment"><p>Based on statistical programming language S (1976)</p></li>
 <li class="fragment"><p>Developed by Ross Ihaka &amp; Robert Gentleman (1995)</p></li>
-<li class="fragment"><p>Very active community, with many (often subject-specific) packages</p></li>
+<li class="fragment"><p>Very active community, with many packages</p></li>
 <li class="fragment"><p>Open source, and interoperable!</p></li>
 </ul>
 </div>
@@ -567,7 +567,7 @@ Oluwafemi Oyedele
 <div class="quarto-layout-cell" style="flex-basis: 100.0%;justify-content: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="img/rstudio-incremental.png" width="800"></p>
+<p><img data-src="img/rstudio-incremental.png" width="700"></p>
 </figure>
 </div>
 </div>
@@ -584,11 +584,13 @@ Oluwafemi Oyedele
 </section>
 <section id="working-directly-in-r" class="slide level2">
 <h2><strong>Working Directly in R</strong></h2>
+<div>
 <ol type="1">
-<li><p>Enter: 2 + 2</p></li>
-<li><p>Hit return</p></li>
-<li><p>View result</p></li>
+<li class="fragment"><p>Enter: 2 + 2</p></li>
+<li class="fragment"><p>Hit return</p></li>
+<li class="fragment"><p>View result</p></li>
 </ol>
+</div>
 </section>
 <section id="your-turn" class="slide level2">
 <h2>Your Turn</h2>
@@ -613,12 +615,14 @@ Oluwafemi Oyedele
 </section>
 <section id="how-to-create-a-project" class="slide level2">
 <h2><strong>How to Create a Project</strong></h2>
+<div>
 <ul>
-<li><p>File -&gt; New Project</p></li>
-<li><p>Give the project a unique name</p></li>
-<li><p>Set the directry where you want to put the project.</p></li>
-<li><p>Quit RStudio, Double-click .Rproj file to reopen project</p></li>
+<li class="fragment"><p>File -&gt; New Project</p></li>
+<li class="fragment"><p>Give the project a unique name</p></li>
+<li class="fragment"><p>Set the directory where you want to put the project.</p></li>
+<li class="fragment"><p>Quit RStudio, Double-click .Rproj file to reopen project</p></li>
 </ul>
+</div>
 </section>
 <section id="your-turn-1" class="slide level2">
 <h2><strong>Your Turn</strong></h2>
@@ -655,12 +659,12 @@ Oluwafemi Oyedele
 <div class="column" style="width:50%;">
 <ul>
 <li class="fragment"><p><strong>R scripts (.R)</strong></p></li>
-<li class="fragment"><p>Text is assumed to be executable R code unless you comment it (more on this soon)</p></li>
+<li class="fragment"><p>Text is assumed to be executable R code unless you comment it</p></li>
 <li class="fragment"><p><strong>Quarto files (.qmd)</strong></p></li>
 <li class="fragment"><p>Text is assumed to be text unless you put it in a code chunk (more on this soon)</p></li>
 </ul>
 </div><div class="column" style="width:50%;">
-<p><img data-src="img/code-chunk.png" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Dr. Maria Tackett" width="300"></p>
+<p><img data-src="img/code-chunk.png" style="float:right;padding: 0 0 0 10px;" alt="Headshot of Dr. Maria Tackett" width="400"></p>
 </div>
 </div>
 </div>
@@ -672,7 +676,7 @@ Oluwafemi Oyedele
 <li class="fragment">Create new script file: File -&gt; New File -&gt; R Script</li>
 </ul>
 </div>
-<p><img data-src="img/new-script.gif"></p>
+<p><img data-src="img/new-script.gif" style="float:right;padding: 0 0 0 10px;" alt="Oluwafemi" width="700"></p>
 </section>
 <section id="how-to-run-code" class="slide level2">
 <h2><strong>How to Run Code</strong></h2>
@@ -681,7 +685,7 @@ Oluwafemi Oyedele
 <li class="fragment">Run the code: control + enter on Windows, command + enter on Mac keystrokes or use Run button</li>
 </ul>
 </div>
-<p><img data-src="img/run-code.gif"></p>
+<p><img data-src="img/run-code.gif" style="width:53.0%"></p>
 </section>
 <section id="how-to-run-code-continuation" class="slide level2">
 <h2><strong>How to Run Code Continuation</strong></h2>
@@ -758,10 +762,12 @@ Oluwafemi Oyedele
 <div class="sourceCode cell-code" id="cb3" data-code-line-numbers="1|2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
 <span id="cb3-2"><a href="#cb3-2"></a><span class="fu">install.packages</span>(<span class="st">"skimr"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div>
 <ul>
-<li><p>The package name must be in quotes.</p></li>
-<li><p>Packages should be installed <strong>once per computer</strong> (i.e.&nbsp;once you’ve installed a package, you don’t need to do it again on the same computer).</p></li>
+<li class="fragment"><p>The package name must be in quotes.</p></li>
+<li class="fragment"><p>Packages should be installed <strong>once per computer</strong> (i.e.&nbsp;once you’ve installed a package, you don’t need to do it again on the same computer).</p></li>
 </ul>
+</div>
 </section>
 <section id="load-packages" class="slide level2">
 <h2><strong>Load Packages</strong></h2>
@@ -772,17 +778,19 @@ Oluwafemi Oyedele
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1"></a><span class="fu">library</span>(tidyverse)</span>
 <span id="cb4-2"><a href="#cb4-2"></a><span class="fu">library</span>(skimr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+<div>
 <ul>
-<li><p>Package names don’t need to be quoted here (though they can be).</p></li>
-<li><p>Packages should be loaded <strong>once per session</strong> (i.e.&nbsp;every time you start working in R, you need to load any packages you want to use).</p></li>
+<li class="fragment"><p>Package names don’t need to be quoted here (though they can be).</p></li>
+<li class="fragment"><p>Packages should be loaded <strong>once per session</strong> (i.e.&nbsp;every time you start working in R, you need to load any packages you want to use).</p></li>
 </ul>
+</div>
 </section>
 <section id="your-turn-2" class="slide level2">
 <h2><strong>Your Turn</strong></h2>
 <ul>
 <li><p>Open the project you downloaded before (it should be on your desktop)</p></li>
 <li><p>Open the readme.md file</p></li>
-<li><p>Install install all the packages</p></li>
+<li><p>Install all the packages</p></li>
 <li><p>Load the <strong>tidyverse</strong> and <strong>skimr</strong> packages using the <strong>library function</strong></p></li>
 </ul>
 </section>
@@ -868,9 +876,9 @@ Oluwafemi Oyedele
 <section id="data-wrangling" class="slide level2">
 <h2>Data Wrangling</h2>
 <p><img data-src="img/tidydata.png"></p>
-<ul>
-<li><strong>In tidy data:</strong></li>
-</ul>
+</section>
+<section id="in-tidy-data" class="slide level2">
+<h2><strong>In tidy data:</strong></h2>
 <div>
 <ul>
 <li class="fragment"><p>Each variable forms a column</p></li>
@@ -1454,7 +1462,9 @@ Merc 280          19.2   6 167.6 123 3.92 3.440 18.30  1  0    4    4  1.283301<
 </section>
 <section id="section-1" class="slide level2">
 <h2></h2>
-<h4 id="resources-to-learn-more">Resources to Learn More</h4>
+</section>
+<section id="resources-to-learn-more" class="slide level2">
+<h2>Resources to Learn More</h2>
 <p><a href="https://r4ds.hadley.nz/">R4DS Book</a></p>
 <p><a href="https://moderndive.netlify.app">ModernDive</a></p>
 <p><a href="https://www.bigbookofr.com">BigBookofR</a></p>

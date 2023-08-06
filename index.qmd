@@ -133,7 +133,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 
 -   Developed by Ross Ihaka & Robert Gentleman (1995)
 
--   Very active community, with many (often subject-specific) packages
+-   Very active community, with many packages
 
 -   Open source, and interoperable!
 :::
@@ -185,7 +185,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 ## R Studio Interface
 
 ::: {layout="[[-1], [1], [-1]]"}
-![](img/rstudio-incremental.png){fig-align="center" width="800"}
+![](img/rstudio-incremental.png){fig-align="center" width="700"}
 :::
 
 ## **Demonstration**
@@ -195,12 +195,13 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 :::
 
 ## **Working Directly in R**
-
+:::{.incremental}
 1.  Enter: 2 + 2
 
 2.  Hit return
 
 3.  View result
+:::
 
 ## Your Turn
 
@@ -226,6 +227,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 
 ## **How to Create a Project**
 
+:::{.incremental}
 -   File -\> New Project
 
 -   Give the project a unique name
@@ -233,6 +235,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 -   Set the directory where you want to put the project.
 
 -   Quit RStudio, Double-click .Rproj file to reopen project
+:::
 
 ## **Your Turn**
 
@@ -271,7 +274,7 @@ There are **two main file types** that you'll work with:
 ::: {.column width="50%"}
 -   **R scripts (.R)**
 
--   Text is assumed to be executable R code unless you comment it (more on this soon)
+-   Text is assumed to be executable R code unless you comment it
 
 -   **Quarto files (.qmd)**
 
@@ -279,7 +282,7 @@ There are **two main file types** that you'll work with:
 :::
 
 ::: {.column width="50%"}
-![](img/code-chunk.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
+![](img/code-chunk.png){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="400"}
 :::
 :::
 :::
@@ -290,15 +293,14 @@ There are **two main file types** that you'll work with:
 -   Create new script file: File -\> New File -\> R Script
 :::
 
-![](img/new-script.gif)
+![](img/new-script.gif){style="float:right;padding: 0 0 0 10px;" fig-alt="Oluwafemi" width="700"}
 
 ## **How to Run Code**
 
 ::: incremental
 -   Run the code: control + enter on Windows, command + enter on Mac keystrokes or use Run button
 :::
-
-![](img/run-code.gif)
+![](img/run-code.gif){width="53%"}
 
 ## **How to Run Code Continuation**
 
@@ -384,10 +386,11 @@ install.packages("tidyverse")
 install.packages("skimr")
 
 ```
-
+:::{.incremental}
 -   The package name must be in quotes.
 
 -   Packages should be installed **once per computer** (i.e. once you've installed a package, you don't need to do it again on the same computer).
+:::
 
 ## **Load Packages**
 
@@ -403,9 +406,11 @@ library(skimr)
 
 ```
 
+:::{.incremental}
 -   Package names don't need to be quoted here (though they can be).
 
 -   Packages should be loaded **once per session** (i.e. every time you start working in R, you need to load any packages you want to use).
+:::
 
 ## **Your Turn**
 
@@ -496,7 +501,8 @@ sorghum %>%
 
 ![](img/tidydata.png)
 
--   **In tidy data:**
+
+## **In tidy data:**
 
 ::: incremental
 -   Each variable forms a column
@@ -723,7 +729,7 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 
 ## 
 
-#### Resources to Learn More
+## Resources to Learn More
 
 [R4DS Book](https://r4ds.hadley.nz/)
 
