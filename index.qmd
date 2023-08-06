@@ -207,7 +207,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 ::: incremental
 -   Open R
 
--   Use any mathematical operators (+, -, /, and \*) to create an expression and make sure it works as expected
+-   Use any mathematical operators (+, -, /, and *) to create an expression and make sure it works as expected
 :::
 
 ## **R Studio Projects**
@@ -230,7 +230,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 
 -   Give the project a unique name
 
--   Set the directry where you want to put the project.
+-   Set the directory where you want to put the project.
 
 -   Quit RStudio, Double-click .Rproj file to reopen project
 
@@ -413,7 +413,7 @@ library(skimr)
 
 -   Open the readme.md file
 
--   Install install all the packages
+-   Install all the packages
 
 -   Load the **tidyverse** and **skimr** packages using the **library function**
 
@@ -756,4 +756,3 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 :::
 :::
 :::
-
