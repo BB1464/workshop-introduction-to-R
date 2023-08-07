@@ -182,6 +182,12 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 -   Enable easy integration of R code into documents.
 :::
 
+## Open R Studio
+
+- We should see something like this
+
+![](https://moderndive.netlify.app/images/rstudio_screenshots/rstudio.png){fig-align="center" width="600"}
+
 ## R Studio Interface
 
 ::: {layout="[[-1], [1], [-1]]"}
