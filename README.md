@@ -77,7 +77,7 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 # Day 1
 
 | Date       | Time                | Activities                                 |
-|------------|---------------------|--------------------------------------------|
+|----------------|------------------|--------------------------------------|
 | 2023-08-12 | 10:00 AM to 3:00 PM | Installation of R and R Studio             |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Introduction to R and RStudio              |
 | 2023-08-12 | 10:00 AM to 3:00 PM | Data Import and Export                     |
@@ -87,7 +87,7 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 # Day 2
 
 | Date       | Time                | Activities                                                                                       |
-|------------|---------------------|--------------------------------------------------------------------------------------------------|
+|-------------|-------------|-----------------------------------------------|
 | 2023-08-19 | 10:00 AM to 3:00 PM | Recap and Questions                                                                              |
 | 2023-08-19 | 10:00 AM to 3:00 PM | Design of Experiment (CRD, RCBD, Latin Square Design, Split Plot Design and Alpha Latice Design) |
 | 2023-08-19 | 10:00 AM to 3:00 PM | Linear regression                                                                                |
@@ -111,7 +111,8 @@ The slides can be found [**here**](https://bb1464.github.io/workshop-introductio
 
 ## Packages
 
-my_packages \<- c("tidyverse","readxl", "factoextra","agricolae","agridat", "lmerTest","lme4","sjPlot", "skimr","ggtext","extrafont","correlation","metan", "fontawesome","emoji","devtools","correlationfunnel","writexl")
+my_packages \<- c("tidyverse","readxl", "factoextra","agricolae","agridat", "lmerTest","lme4","sjPlot", "skimr","ggtext","extrafont","correlation","metan", "fontawesome","emoji","devtools","correlationfunnel","writexl","pastecs")
+
 
 devtools::install_github("agstn/dataxray")
 
