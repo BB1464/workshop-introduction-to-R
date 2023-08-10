@@ -8,6 +8,7 @@ logo: "img/ui.jpg"
 header-logo: "img/rlogo.png"
 filters:
   - reveal-header
+  - quarto
 auto-stretch: false
 #css: logo.css
 format: 
