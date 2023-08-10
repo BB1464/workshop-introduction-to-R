@@ -50,6 +50,7 @@ execute:
 -   `r fontawesome::fa("globe")` [bb1464.github.io](https://bb1464.github.io/oluwafemi-oyedele/)
 :::
 
+
 ::: {.column width="40%"}
 ![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
 :::
