@@ -50,7 +50,7 @@ by **Oluwafemi Oyedele**
 
 ------------------------------------------------------------------------
 
-:spiral_calendar: August 12, 19 and 26, 2023
+:spiral_calendar: 19, 26, August and 2nd of September, 2023
 
 :alarm_clock: 10:00 AM - 3:00 PM
 
@@ -78,30 +78,30 @@ R and R Studio can be installed through this link [**here**](https://posit.co/do
 
 | Date       | Time                | Activities                                 |
 |----------------|------------------|--------------------------------------|
-| 2023-08-12 | 10:00 AM to 3:00 PM | Installation of R and R Studio             |
-| 2023-08-12 | 10:00 AM to 3:00 PM | Introduction to R and RStudio              |
-| 2023-08-12 | 10:00 AM to 3:00 PM | Data Import and Export                     |
-| 2023-08-12 | 10:00 AM to 3:00 PM | Data summary (Simple Descriptive analysis) |
-| 2023-08-12 | 10:00 AM to 3:00 PM | Data Wrangling                             |
+| 2023-08-19 | 10:00 AM to 3:00 PM | Installation of R and R Studio             |
+| 2023-08-19 | 10:00 AM to 3:00 PM | Introduction to R and RStudio              |
+| 2023-08-19 | 10:00 AM to 3:00 PM | Data Import and Export                     |
+| 2023-08-19 | 10:00 AM to 3:00 PM | Data summary (Simple Descriptive analysis) |
+| 2023-08-19 | 10:00 AM to 3:00 PM | Data Wrangling                             |
 
 # Day 2
 
 | Date       | Time                | Activities                                                                                       |
 |-------------|-------------|-----------------------------------------------|
-| 2023-08-19 | 10:00 AM to 3:00 PM | Recap and Questions                                                                              |
-| 2023-08-19 | 10:00 AM to 3:00 PM | Design of Experiment (CRD, RCBD, Latin Square Design, Split Plot Design and Alpha Latice Design) |
+| 2023-08-26 | 10:00 AM to 3:00 PM | Recap and Questions                                                                              |
+| 2023-08-26 | 10:00 AM to 3:00 PM | Design of Experiment (CRD, RCBD, Latin Square Design, Split Plot Design and Alpha Latice Design) |
 | 2023-08-19 | 10:00 AM to 3:00 PM | Linear regression                                                                                |
-| 2023-08-19 | 10:00 AM to 3:00 PM | Correlation                                                                                      |
-| 2023-08-19 | 10:00 AM to 3:00 PM | Cluster Analysis                                                                                 |
+| 2023-08-26 | 10:00 AM to 3:00 PM | Correlation                                                                                      |
+| 2023-08-26 | 10:00 AM to 3:00 PM | Cluster Analysis                                                                                 |
 
 # Day 3
 
 | Date       | Time                | Activities             |
 |------------|---------------------|------------------------|
-| 2023-08-26 | 10:00 AM to 3:00 PM | Recap and Questions    |
-| 2023-08-26 | 10:00 AM to 3:00 PM | PCA                    |
-| 2023-08-26 | 10:00 AM to 3:00 PM | Data Visualization     |
-| 2023-08-26 | 10:00 AM to 3:00 PM | Communication (Report) |
+| 2023-09-2 | 10:00 AM to 3:00 PM | Recap and Questions    |
+| 2023-09-2 | 10:00 AM to 3:00 PM | PCA                    |
+| 2023-09-2 | 10:00 AM to 3:00 PM | Data Visualization     |
+| 2023-09-2 | 10:00 AM to 3:00 PM | Communication (Report) |
 
 ## Presenter
 

@@ -2,7 +2,7 @@
 title: "Training on Statistics and Data Analysis using R"
 author: "Oluwafemi Oyedele"
 subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
-date: "2023-08-12"
+date: "2023-08-19"
 footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
 logo: "img/ui.jpg"
 header-logo: "img/rlogo.png"
