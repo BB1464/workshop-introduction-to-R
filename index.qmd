@@ -151,7 +151,9 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 
 -   R can handle virtually any data format.
 
--   R makes replication easy.
+-   Analyses done using R are reproducible
+
+-  Using R makes collaboration easier.
 :::
 
 ## **What is R Studio**
