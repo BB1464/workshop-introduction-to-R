@@ -1,0 +1,21 @@
+---
+title: |
+  Experimental Design in R
+subtitle: |
+  TRAINING ON STATISTICS AND DATA ANALYSIS USING R <br> Post Graduate Students, CPEB Club, University of Ibadan   
+author: Oluwafemi Oyedele [`r fontawesome::fa(name = "github")`](https://github.com/BB1464) [`r fontawesome::fa(name = "linkedin")`](https://www.linkedin.com/in/oluwafemioyedele/) [`r fontawesome::fa(name = "link")`](https://bb1464.github.io/oluwafemi-oyedele/) [`r fontawesome::fa(name = "twitter")`](https://twitter.com/OluwafemOyedele)
+format:
+  revealjs:
+    theme: [dark, custom.scss]
+    self-contained: true
+    controls: true
+    slide-number: true
+    scrollable: true
+    mouse-wheel: true
+    preview-links: auto
+---
+
+```{r}
+library(fontawesome)
+```
+

@@ -1,6 +1,192 @@
 /*-- scss:defaults --*/
-$body-bg: #111233;
-$body-color: #ffa275;
-$link-color: #99D9DD;
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:600,600i&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
+
+
+$body-bg: #343838;
+$body-color: #FFFFFF;
+$link-color: #C7B41D;
+$presentation-font-size-root: 40px;
+
+
+// headings
+$presentation-heading-font: 'Josefin Sans', sans-serif !default;
+$presentation-font-size-root: 1.75rem !default;
+
+$presentation-h1-font-size: 5.75rem !default;
+$presentation-h2-font-size: 2.75rem !default;
+$presentation-h3-font-size: 2rem !default;
+
+
+//code
+$font-family-monospace: 'Fira Mono', monospace  !default;
 
 /*-- scss:rules --*/
+
+// https://stackoverflow.com/questions/75471614/how-to-make-code-chunk-output-scrollable-horizontally-in-quarto-revealjs-present
+
+// To make code chunk scroll horizontally
+.hscroll {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.reveal .footer > * {
+  font-size: 0.8rem;
+}
+
+#title-slide {
+  text-align: left;
+
+  .subtitle,
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    font-style: italic;
+    color: #7F7F7F;
+  }
+
+  .author, .quarto-title-author-name {
+    color: $body-color;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: left;
+
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+
+  p.author::before, div.quarto-title-author::before {
+    content: "";
+    display: block;
+    border: none;
+    background-color: $body-color;
+    color: $body-color;
+    height: 3px;
+    margin-bottom: 1em;
+  }
+
+}
+
+
+// code
+$code-color: #FFFFFF !default;
+$code-block-font-size: 0.6em;
+$code-block-border-color: #d4d0ab;
+$code-block-bg: #343838;
+
+
+// headings
+$h1-font-size: 1.6em !default;
+$h2-font-size: 1.3em !default;
+$h3-font-size: 1.15em !default;
+
+/*-- scss:rules --*/
+
+
+.small {
+  font-size: 0.75em;
+}
+
+.brshort {
+    line-height: 10px;
+ }
+
+.reveal .slide .question {
+  border-left: 3px solid #7aa81e;
+  padding-left: 1.0em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #97c71d;
+}
+
+.reveal .slide .poll {
+  border-left: 3px solid #FFD166;
+  padding-left: 0.5em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  background: #FFEDC2;
+}
+
+.reveal .slide .appex {
+  border-left: 3px solid #003559;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  background: #EBF7FF;
+}
+
+
+.subtitle {
+  color: $link-color;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.author {
+  color: $link-color;
+  font-size: $h2-font-size;
+  font-family: $presentation-heading-font;
+}
+
+.footer {
+  color: $link-color;
+  font-family: $presentation-heading-font;
+}
+
+.reveal .slide-number {
+  color: $link-color;
+  font-family: $presentation-heading-font;
+}
+
+.reveal .panel-tabset [role=tab] {
+    font-size: 0.8em;
+}
+
+.reveal .footer {
+    color: $link-color;
+}
+
+.huge-primary {
+ font-family: $font-family-sans-serif;
+ font-size: 1500%;
+ font-weight: bold;
+ color: #FFFFFF;
+}
+
+
+.center-x{
+    text-align: center;
+}
+
+.black-code {
+  color: #000000;
+  font-family: $font-family-monospace;
+  font-size: 2em;
+}
+
+.black-code-smaller {
+  color: #000000;
+  font-family: $font-family-monospace;
+  font-size: 1.5em;
+}
+
+.black-code-smallest {
+  color: #000000;
+  font-family: $font-family-monospace;
+  font-size: 1em;
+}
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
