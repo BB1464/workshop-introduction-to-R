@@ -4,3 +4,5 @@
 .httr-oauth
 .DS_Store
 workshop-materials
+workshop-materials/Cluster.R
+workshop-materials/Design_of_Experiment.qmd
