@@ -76,6 +76,14 @@ Information on how to install these (and troubleshoot the installation) is on ou
 
 R and R Studio can be installed through this link [**here**](https://posit.co/download/rstudio-desktop/)
 
+# To Download the Workshop Materials
+install.packages("devtools")
+
+library(usethis) # This line loads the usethis package into R memory
+
+use_course("https://github.com/BB1464/workshop-introduction-to-R.git") # this line will pull all the source code from my github repo into your system.
+
+
 # Day 1
 
 | Date       | Time                | Activities                                 |
