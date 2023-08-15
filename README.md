@@ -14,6 +14,8 @@ The course will take you from the very basics in R syntax, to data handling and 
 
 -   You need to have internet connection to Install R, R Studio and all the required packages.
 
+- We will be using Google meet for the training
+
 **Learning objectives**:
 
 -   Installation of R and R Studio
