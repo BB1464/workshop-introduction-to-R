@@ -741,15 +741,25 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 
 ## Resources to Learn More
 
-[R4DS Book](https://r4ds.hadley.nz/)
+::: {.incremental}
 
-[ModernDive](https://moderndive.netlify.app)
+- [R4DS Book](https://r4ds.hadley.nz/)
 
-[BigBookofR](https://www.bigbookofr.com)
+- [ModernDive](https://moderndive.netlify.app)
 
-[ggplot2](https://ggplot2-book.org/index.html)
+- [BigBookofR](https://www.bigbookofr.com)
 
-[RLadies Video Feed on YouTube](https://ivelasq.github.io/rladies-video-feed/)
+- [Data carpentary](https://datacarpentry.org/R-ecology-lesson/)
+
+- [Awesome R Learning Resources](https://awesome-r.com/)
+
+- [R Cookbook](http://www.cookbook-r.com/)
+
+- [Stat545](http://stat545.com/)
+
+- [RLadies Video Feed on YouTube](https://ivelasq.github.io/rladies-video-feed/)
+:::
+
 
 ## **QUESTIONS?**
 
