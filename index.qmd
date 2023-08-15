@@ -120,6 +120,10 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 :::
 :::
 
+## RStudio Installation Cont.
+
+![](img/rstudioinstallation.png){fig-align="center"}
+
 ## **What is R**
 
 ::: columns
@@ -154,6 +158,8 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 -   Analyses done using R are reproducible
 
 -  Using R makes collaboration easier.
+
+- Finding answers to questions is much simpler in R
 :::
 
 ## **What is R Studio**
@@ -507,18 +513,163 @@ sorghum %>%
 -   **Logical** (e.g. "TRUE and FALSE")
 :::
 
-## Data Wrangling
+## Tidy Data
+
+::: {.incremental}
+-  This is the consistent way of storing data in R
+:::
 
 ![](img/tidydata.png)
 
+## Tidy Data Example
+::: {.columns}
 
-## **In tidy data:**
+::: {.column width='50%'}
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|3"
+#| code-overflow: scroll
+library(tidyr)
 
-::: incremental
--   Each variable forms a column
+table1
 
--   Each observation forms a row
+```
+
 :::
+
+::: {.column width='50%'}
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|3"
+#| code-overflow: scroll
+library(tidyr)
+
+head(table3,6)
+
+```
+
+:::
+
+:::
+
+## Rules for making a data set tidy
+
+::: {.incremental}
+- Each variable is a column; each column is a variable
+
+- Each observation is a row; each row is an observation
+
+- Each value is a cell; each cell is a single value
+:::
+
+## Making Table3 to Tidy Data
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|2|3|4|5"
+#| code-overflow: scroll
+library(dplyr)
+library(tidyr)
+table3 %>%
+  separate(col = c(rate), into = c('Cases', 'Population'))
+
+```
+## Data in column names
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|2|3"
+#| code-overflow: scroll
+library(dplyr)
+library(tidyr)
+head(billboard)
+```
+
+## Pivot Longer Function from Tidyr
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|2|3|4"
+#| code-overflow: scroll
+library(dplyr)
+library(tidyr)
+billboard %>%
+  pivot_longer(cols = starts_with('wk'),
+               names_to = 'Week',
+               values_to = 'Rank')
+```
+
+## How to Drop Missing Values
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|2|3|4|5|6"
+#| code-overflow: scroll
+library(dplyr)
+library(tidyr)
+billboard |> 
+  pivot_longer(
+    cols = starts_with("wk"), 
+    names_to = "week", 
+    values_to = "rank",
+    values_drop_na = TRUE
+  )
+```
+
+## How Does Pivot Longer Works
+
+![](https://r4ds.hadley.nz/diagrams/tidy-data/variables.png)
+
+## Pivot Wider
+
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-overflow: scroll
+#| code-line-numbers: "1|2|3|4"
+library(dplyr)
+library(tidyr)
+df <- tribble(
+  ~id, ~measurement, ~value,
+  "A",        "bp1",    100,
+  "B",        "bp1",    140,
+  "B",        "bp2",    115, 
+  "A",        "bp2",    120,
+  "A",        "bp3",    105
+)
+```
+
+## Pivot Wider Example
+```{r}
+#| echo: true
+#| warning: false
+#| message: false
+#| code-line-numbers: "1|2|3|4"
+#| code-overflow: scroll
+library(dplyr)
+library(tidyr)
+df |> 
+  pivot_wider(
+    names_from = measurement,
+    values_from = value
+  )
+```
+
+## How Does Pivot Wider Works
+
+![](https://epirhandbook.com/en/images/pivoting/pivot_wider_new.png)
 
 ## Summary Statistics of the dataset
 
@@ -528,6 +679,7 @@ sorghum %>%
 ```{r}
 #| echo: true
 #| code-line-numbers: "1|2"
+#| code-overflow: scroll
 library(skimr)
 output <- skim(iris)
 ```
@@ -736,6 +888,9 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 ## Google
 
 ![](img/programming-google.png)(https://twitter.com/ekaleedmiston/status/1081221822186696706)
+
+## Finding more functions and packages
+[https://www.rdocumentation.org/](https://www.rdocumentation.org/)
 
 ## 
 
