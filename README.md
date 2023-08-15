@@ -111,12 +111,13 @@ The slides can be found [**here**](https://bb1464.github.io/workshop-introductio
 
 ## Packages
 
-my_packages \<- c("tidyverse","readxl", "factoextra","agricolae","agridat", "lmerTest","lme4","sjPlot", "skimr","ggtext","extrafont","correlation","metan", "fontawesome","emoji","devtools","correlationfunnel","writexl","pastecs")
+my_packages <- c("tidyverse","readxl","factoextra","agricolae","agridat","lmerTest","lme4","sjPlot","skimr","ggtext",
+"exrafont","correlation","metan","fontawesome","emoji","devtools","correlationfunnel","writexl","pastecs")
 
 
 devtools::install_github("agstn/dataxray")
 
-install.packages(my_packages, repos = "<http://cran.rstudio.com>")
+install.packages(my_packages, repos ="http://cran.rstudio.com")
 
 <h1 align="center">
 
