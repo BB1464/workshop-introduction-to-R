@@ -68,9 +68,7 @@ library(emoji)
 
 ## My R journey (so far)
 
-```{r,fig.align='center',out.height='450px',out.width='500px'}
-knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
-```
+![](img/RlearningPath.png){.absolute top=100 right=100 width='530' height='530'}
 
 ## Learning Objectives
 
@@ -106,7 +104,7 @@ knitr::include_graphics(path = here::here('img/RlearningPath.PNG'))
 
 ## Installation
 
-![](img/installation.png)
+![](img/installation.png){.absolute top=100 right=100 width='550' height='550'}
 
 ## **Install R and R Studio**
 
@@ -521,6 +519,21 @@ sorghum %>%
 
 ![](img/tidydata.png)
 
+
+## The Philosophy of Tidy Data
+
+::: {.incremental}
+Data can be **messy** or **tidy**. Messy data can be in a number of different ways, but tidy data is any dataset where:
+
+- Each variable is a column; each column is a variable
+
+- Each observation is a row; each row is an observation
+
+- Each value is a cell; each cell is a single value
+:::
+
+
+
 ## Tidy Data Example
 ::: {.columns}
 
@@ -554,18 +567,6 @@ head(table3,6)
 
 :::
 
-:::
-
-## The Philosophy of Tidy Data
-
-::: {.incremental}
-Data can be **messy** or **tidy**. Messy data can be in a number of different ways, but tidy data is any dataset where:
-
-- Each variable is a column; each column is a variable
-
-- Each observation is a row; each row is an observation
-
-- Each value is a cell; each cell is a single value
 :::
 
 ## Making Table3 to Tidy Data

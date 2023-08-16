@@ -10,7 +10,7 @@ The course will take you from the very basics in R syntax, to data handling and 
 
 # Pre-Requisite for Attending this Training
 
--   You need to have a laptop
+-   You need to have a laptop with a minimum of 4 Gig RAM
 
 -   You need to have internet connection to Install R, R Studio and all the required packages.
 
