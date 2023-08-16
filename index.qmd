@@ -556,9 +556,11 @@ head(table3,6)
 
 :::
 
-## Rules for making a data set tidy
+## The Philosophy of Tidy Data
 
 ::: {.incremental}
+Data can be **messy** or **tidy**. Messy data can be in a number of different ways, but tidy data is any dataset where:
+
 - Each variable is a column; each column is a variable
 
 - Each observation is a row; each row is an observation
