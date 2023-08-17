@@ -1,9 +1,9 @@
 ---
-title: "Training on Statistics and Data Analysis using R"
+title: "Training on Statistics and Data Analysis using R 👨‍💻"
 author: "Oluwafemi Oyedele"
 subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
 date: "2023-08-19"
-footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R)"
+footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R) 👨‍💻"
 logo: "img/ui.jpg"
 header-logo: "img/rlogo.png"
 filters:
@@ -30,7 +30,7 @@ execute:
   freeze: auto
 ---
 
-**About me**
+**About me**✍️✍️✍️
 
 ::: incremental
 ::: columns
@@ -50,7 +50,6 @@ execute:
 -   `r fontawesome::fa("globe")` [bb1464.github.io](https://bb1464.github.io/oluwafemi-oyedele/)
 :::
 
-
 ::: {.column width="40%"}
 ![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
 :::
@@ -66,11 +65,11 @@ library(fontawesome)
 library(emoji)
 ```
 
-## My R journey (so far)
+## My R journey (so far 👨‍💻👨‍💻👨‍💻️
 
-![](img/RlearningPath.png){.absolute top=100 right=100 width='530' height='530'}
+![](img/RlearningPath.png){.absolute top="100" right="100" width="530" height="530"}
 
-## Learning Objectives
+## Learning Objectives✍️✍️✍️
 
 ::: incremental
 -   Installation of R and R Studio
@@ -90,7 +89,7 @@ library(emoji)
 -   Correlation
 :::
 
-## Learning Objectives Continued
+## Learning Objectives Continued✍️✍️✍️
 
 ::: incremental
 -   Cluster analysis
@@ -102,11 +101,11 @@ library(emoji)
 -   Communication (Report)
 :::
 
-## Installation
+## Installation)
 
-![](img/installation.png){.absolute top=100 right=100 width='550' height='550'}
+![](img/installation.png){.absolute top="100" right="100" width="550" height="550"}
 
-## **Install R and R Studio**
+## **Install R and R Studio**) {.test}
 
 ::: columns
 ::: {.column width="35%"}
@@ -118,11 +117,11 @@ library(emoji)
 :::
 :::
 
-## RStudio Installation Cont.
+## RStudio Installation Cont. ) {.test}
 
 ![](img/rstudioinstallation.png){fig-align="center"}
 
-## **What is R**
+## **What is R**💥💥💥 {.test}
 
 ::: columns
 ::: {.column width="40%"}
@@ -144,7 +143,7 @@ library(emoji)
 :::
 :::
 
-## **If one already knows Stata or similar software, why use R?**
+## **If one already knows Stata or similar software, why use R?**😂😂😂
 
 ::: incremental
 -   R is *free*, so you don't need a terminal server
@@ -155,12 +154,12 @@ library(emoji)
 
 -   Analyses done using R are reproducible
 
--  Using R makes collaboration easier.
+-   Using R makes collaboration easier.
 
-- Finding answers to questions is much simpler in R
+-   Finding answers to questions is much simpler in R
 :::
 
-## **What is R Studio**
+## **What is R Studio** ️👁️‍🗨️👁️‍🗨️👁️‍🗨️ {.test}
 
 ::: columns
 ::: {.column width="40%"}
@@ -178,7 +177,7 @@ library(emoji)
 :::
 :::
 
-## **RStudio can:**
+## **RStudio can:**💥💥💥
 
 ::: incremental
 -   organize your code, output, and plots.
@@ -192,7 +191,7 @@ library(emoji)
 
 ## Open R Studio
 
-- We should see something like this
+-   We should see something like this
 
 ![](https://moderndive.netlify.app/images/rstudio_screenshots/rstudio.png){fig-align="center" width="600"}
 
@@ -202,27 +201,32 @@ library(emoji)
 ![](img/rstudio-incremental.png){fig-align="center" width="700"}
 :::
 
-## **Demonstration**
+## **Demonstration**👨‍💻👨‍💻👨‍💻
 
 ::: incremental
 -   Demontration on the various tabs found in R and R Studio.
 :::
 
 ## **Working Directly in R**
-:::{.incremental}
+
+::: incremental
 1.  Enter: 2 + 2
 
 2.  Hit return
 
 3.  View result
+
+4.  We can create new object with the assignment (`<-`) operator
+
+5.  **R is case sensitive**
 :::
 
-## Your Turn
+## Your Turn {.test}
 
 ::: incremental
 -   Open R
 
--   Use any mathematical operators (+, -, /, and *) to create an expression and make sure it works as expected
+-   Use any mathematical operators (+, -, /, and \*) to create an expression and make sure it works as expected
 :::
 
 ## **R Studio Projects**
@@ -241,7 +245,7 @@ library(emoji)
 
 ## **How to Create a Project**
 
-:::{.incremental}
+::: incremental
 -   File -\> New Project
 
 -   Give the project a unique name
@@ -314,6 +318,7 @@ There are **two main file types** that you'll work with:
 ::: incremental
 -   Run the code: control + enter on Windows, command + enter on Mac keystrokes or use Run button
 :::
+
 ![](img/run-code.gif){width="53%"}
 
 ## **How to Run Code Continuation**
@@ -343,6 +348,8 @@ head(data, n = 5)
 ::: incremental
 ::: columns
 ::: {.column width="60%"}
+-   An R package is a collection of functions, data and documentation that extends the capability of base R.
+
 -   Packages add functionality that is not present in base R.
 
 -   They're where much of the power of R is found.
@@ -400,7 +407,8 @@ install.packages("tidyverse")
 install.packages("skimr")
 
 ```
-:::{.incremental}
+
+::: incremental
 -   The package name must be in quotes.
 
 -   Packages should be installed **once per computer** (i.e. once you've installed a package, you don't need to do it again on the same computer).
@@ -420,7 +428,7 @@ library(skimr)
 
 ```
 
-:::{.incremental}
+::: incremental
 -   Package names don't need to be quoted here (though they can be).
 
 -   Packages should be loaded **once per session** (i.e. every time you start working in R, you need to load any packages you want to use).
@@ -513,31 +521,28 @@ sorghum %>%
 
 ## Tidy Data
 
-::: {.incremental}
--  This is the consistent way of storing data in R
+::: incremental
+-   This is the consistent way of storing data in R
 :::
 
 ![](img/tidydata.png)
 
-
 ## The Philosophy of Tidy Data
 
-::: {.incremental}
+::: incremental
 Data can be **messy** or **tidy**. Messy data can be in a number of different ways, but tidy data is any dataset where:
 
-- Each variable is a column; each column is a variable
+-   Each variable is a column; each column is a variable
 
-- Each observation is a row; each row is an observation
+-   Each observation is a row; each row is an observation
 
-- Each value is a cell; each cell is a single value
+-   Each value is a cell; each cell is a single value
 :::
 
-
-
 ## Tidy Data Example
-::: {.columns}
 
-::: {.column width='50%'}
+::: columns
+::: {.column width="50%"}
 ```{r}
 #| echo: true
 #| warning: false
@@ -549,10 +554,9 @@ library(tidyr)
 table1
 
 ```
-
 :::
 
-::: {.column width='50%'}
+::: {.column width="50%"}
 ```{r}
 #| echo: true
 #| warning: false
@@ -564,9 +568,7 @@ library(tidyr)
 head(table3,6)
 
 ```
-
 :::
-
 :::
 
 ## Making Table3 to Tidy Data
@@ -583,6 +585,7 @@ table3 %>%
   separate(col = c(rate), into = c('Cases', 'Population'))
 
 ```
+
 ## Data in column names
 
 ```{r}
@@ -613,6 +616,7 @@ billboard %>%
 ```
 
 ## How to Drop Missing Values
+
 ```{r}
 #| echo: true
 #| warning: false
@@ -655,6 +659,7 @@ df <- tribble(
 ```
 
 ## Pivot Wider Example
+
 ```{r}
 #| echo: true
 #| warning: false
@@ -719,6 +724,8 @@ print(output)
 -   `filter(data, expressions)`
 
 -   The first argument is the name of the data frame The second and subsequent arguments are the expressions that filter the data frame
+
+-   To use filter effectively we need to make proper use of the comparison operators i.e. (`>`,`>=`,`<`,`<=`,`!=` and `==`)
 :::
 
 ## Data Transformation: Filter
@@ -791,7 +798,7 @@ arrange(mtcars, desc(mpg))
 
 -   Select help us to pick variable by their position or name in a `dataframe`.
 
--   We can also used other `select` helpers function like `start_with`, `end_with` and `everything`
+-   We can also used other `select` helpers function like `start_with`, `end_with`, `contains` and `everything`
 
 ```{r}
 #| echo: true
@@ -828,6 +835,12 @@ summarise(by_treatment, Sepal.Length_mean = mean(Sepal.Length, na.rm = TRUE))
 ```
 
 ## Data Transformation: The pipe `%>%`
+
+::: incremental
+-   The pipe help us to combine multiple operations together.
+
+-   The pipe makes code easy to read.
+:::
 
 ```{r}
 #| echo: true
@@ -893,31 +906,30 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 ![](img/programming-google.png)(https://twitter.com/ekaleedmiston/status/1081221822186696706)
 
 ## Finding more functions and packages
-[https://www.rdocumentation.org/](https://www.rdocumentation.org/)
+
+<https://www.rdocumentation.org/>
 
 ## 
 
 ## Resources to Learn More
 
-::: {.incremental}
+::: incremental
+-   [R4DS Book](https://r4ds.hadley.nz/)
 
-- [R4DS Book](https://r4ds.hadley.nz/)
+-   [ModernDive](https://moderndive.netlify.app)
 
-- [ModernDive](https://moderndive.netlify.app)
+-   [BigBookofR](https://www.bigbookofr.com)
 
-- [BigBookofR](https://www.bigbookofr.com)
+-   [Data carpentary](https://datacarpentry.org/R-ecology-lesson/)
 
-- [Data carpentary](https://datacarpentry.org/R-ecology-lesson/)
+-   [Awesome R Learning Resources](https://awesome-r.com/)
 
-- [Awesome R Learning Resources](https://awesome-r.com/)
+-   [R Cookbook](http://www.cookbook-r.com/)
 
-- [R Cookbook](http://www.cookbook-r.com/)
+-   [Stat545](http://stat545.com/)
 
-- [Stat545](http://stat545.com/)
-
-- [RLadies Video Feed on YouTube](https://ivelasq.github.io/rladies-video-feed/)
+-   [RLadies Video Feed on YouTube](https://ivelasq.github.io/rladies-video-feed/)
 :::
-
 
 ## **QUESTIONS?**
 
@@ -936,7 +948,7 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 :::
 
 ::: {.column width="40%"}
-![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="300"}
+![](img/pix.jpg){style="float:right;padding: 0 0 0 10px;" fig-alt="Headshot of Oluwafemi" width="300"}
 :::
 :::
 :::
