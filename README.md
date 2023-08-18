@@ -82,7 +82,7 @@ install.packages("devtools")
 
 library(usethis) # This line loads the usethis package into R memory
 
-use_course("https://github.com/BB1464/workshop-introduction-to-R.git") # this line will pull all the source code from my github repo into your system.
+use_course("https://github.com/BB1464/workshop-introduction-to-R/archive/refs/heads/master.zip") # this line will pull all the source code from my github repo into your system.
 
 
 # Day 1
