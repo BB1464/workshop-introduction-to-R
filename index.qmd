@@ -68,7 +68,7 @@ library(fontawesome)
 library(emoji)
 ```
 
-## My R journey (so far 👨‍💻👨‍💻👨‍💻️ {.test}
+## My R journey (so far 👨‍💻👨‍💻👨‍💻️
 
 ![](img/RlearningPath.png){.absolute top="70" right="70" width="530" height="530"}
 
