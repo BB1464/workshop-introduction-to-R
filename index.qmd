@@ -70,7 +70,7 @@ library(emoji)
 
 ## My R journey (so far 👨‍💻👨‍💻👨‍💻️ {.test}
 
-![](img/RlearningPath.png){.stacked-img .absolute top="100" right="100" width="530" height="530"}
+![](img/RlearningPath.png){.absolute top="100" right="100" width="530" height="530"}
 
 ## Learning Objectives✍️✍️✍️
 
