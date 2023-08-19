@@ -133,7 +133,7 @@ library(emoji)
 #| code-line-numbers: "1|2|3"
 install.packages("usethis")
 library(usethis) # This line loads the usethis package into R memory
-use_course("https://github.com/BB1464/workshop-introduction-to-R.git") # this line will pull all the source code from my github repo into your system.
+use_course("https://github.com/BB1464/workshop-introduction-to-R/archive/refs/heads/master.zip") # this line will pull all the source code from my github repo into your system.
 
 ```
 
@@ -301,7 +301,7 @@ new_object
 ```
 :::
 
-## Using Ojects {.test}
+## Using Objects {.test}
 
 ::: incremental
 -   An objects name represents the information stored in it.
@@ -535,7 +535,7 @@ library(skimr)
 
 -   Load the **tidyverse** and **skimr** packages using the **library function**
 
-## **Data Science Workflow in R by (Hadley Wickham)**
+## **Data Science Workflow in R by (Hadley Wickham) (Continue)**
 
 ![](img/data-science-workflow.png)
 
