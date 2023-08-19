@@ -70,7 +70,7 @@ library(emoji)
 
 ## My R journey (so far 👨‍💻👨‍💻👨‍💻️
 
-![](img/RlearningPath.png){style="float:right;padding: 0 0 0 5px;" fig-alt="Headshot of Dr. Maria Tackett" width="370"}
+![](img/RlearningPath.png)
 
 
 ## Learning Objectives✍️✍️✍️
