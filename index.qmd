@@ -70,7 +70,7 @@ library(emoji)
 
 ## My R journey (so far 👨‍💻👨‍💻👨‍💻️
 
-![](img/RlearningPath.PNG)
+![](img/learning.png)
 
 
 ## Learning Objectives✍️✍️✍️
