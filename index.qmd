@@ -70,7 +70,8 @@ library(emoji)
 
 ## My R journey (so far 👨‍💻👨‍💻👨‍💻️
 
-![](img/learning.png)
+![](img/learning.png){style="float:right;padding: 0 0 0 5px;" fig-alt="Headshot of Oluwafemi" width="370"}
+
 
 
 ## Learning Objectives✍️✍️✍️
