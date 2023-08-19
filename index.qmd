@@ -74,6 +74,7 @@ library(emoji)
 
 ## Learning Objectives✍️✍️✍️
 
+
 ::: incremental
 -   Installation of R and R Studio
 
