@@ -4,3 +4,22 @@ $body-color: #ffa275;
 $link-color: #99D9DD;
 
 /*-- scss:rules --*/
+
+
+.reveal .slide-logo {
+  height: 100px !important;
+  width: 100px!important;
+  max-width: unset !important;
+  max-height: unset !important;
+}
+
+
+
+.test h2 {
+  text-align: center;
+}
+
+
+.reveal pre.sourceCode code {
+	height: 90px;
+}
