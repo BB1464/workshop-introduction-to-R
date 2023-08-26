@@ -10,9 +10,11 @@ The course will take you from the very basics in R syntax, to data handling and 
 
 # Pre-Requisite for Attending this Training
 
--   You need to have a laptop
+-   You need to have a laptop with a minimum of 4 Gig RAM
 
 -   You need to have internet connection to Install R, R Studio and all the required packages.
+
+- We will be using Google meet for the training
 
 **Learning objectives**:
 
@@ -74,6 +76,15 @@ Information on how to install these (and troubleshoot the installation) is on ou
 
 R and R Studio can be installed through this link [**here**](https://posit.co/download/rstudio-desktop/)
 
+# To Download the Workshop Materials from Github
+
+install.packages("devtools")
+
+library(usethis) # This line loads the usethis package into R memory
+
+use_course("https://github.com/BB1464/workshop-introduction-to-R/archive/refs/heads/master.zip") # this line will pull all the source code from my github repo into your system.
+
+
 # Day 1
 
 | Date       | Time                | Activities                                 |
@@ -111,12 +122,13 @@ The slides can be found [**here**](https://bb1464.github.io/workshop-introductio
 
 ## Packages
 
-my_packages \<- c("tidyverse","readxl", "factoextra","agricolae","agridat", "lmerTest","lme4","sjPlot", "skimr","ggtext","extrafont","correlation","metan", "fontawesome","emoji","devtools","correlationfunnel","writexl","pastecs")
+my_packages <- c("tidyverse","readxl","factoextra","agricolae","agridat","lmerTest","lme4","sjPlot","skimr","ggtext",
+"exrafont","correlation","metan","fontawesome","emoji","devtools","correlationfunnel","writexl","pastecs","rsthemes","esquisse","here")
 
 
 devtools::install_github("agstn/dataxray")
 
-install.packages(my_packages, repos = "<http://cran.rstudio.com>")
+install.packages(my_packages, repos ="http://cran.rstudio.com")
 
 <h1 align="center">
 

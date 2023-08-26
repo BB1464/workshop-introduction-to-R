@@ -124,3 +124,20 @@ $h3-font-size: 1.15em !default;
   max-width: unset !important;
   max-height: unset !important;
 }
+
+
+.test h2 {
+  text-align: center;
+}
+
+
+.stacked-img img {
+  margin-bottom: 8em;
+  height: 85vh;
+}
+
+
+
+.reveal pre.sourceCode code {
+	height: 90px;
+}

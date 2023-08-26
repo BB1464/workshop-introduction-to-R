@@ -184,9 +184,22 @@ $h3-font-size: 1.15em !default;
   font-size: 1em;
 }
 
+/*-- scss:rules --*/
+
+
 .reveal .slide-logo {
   height: 100px !important;
   width: 100px!important;
   max-width: unset !important;
   max-height: unset !important;
+}
+
+
+.test h2 {
+  text-align: center;
+}
+
+
+.reveal pre.sourceCode code {
+	height: 90px;
 }
