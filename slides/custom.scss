@@ -5,11 +5,13 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Mono&display=swap);
 
 
-$body-bg: #343838;
-$body-color: #FFFFFF;
-$link-color: #C7B41D;
-$presentation-font-size-root: 40px;
+/*-- scss:defaults --*/
+$body-bg: #111233;
+$body-color: #ffa275;
+$link-color: #99D9DD;
+$code-block-font-size: 0.8em;
 
+/*-- scss:rules --*/
 
 // headings
 $presentation-heading-font: 'Josefin Sans', sans-serif !default;

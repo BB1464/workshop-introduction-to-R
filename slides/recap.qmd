@@ -1,0 +1,103 @@
+---
+title: "Questions and Recap"
+author: "Oluwafemi Oyedele"
+subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
+date: today
+date-format: full
+#date-modified: last-modified
+footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R) 👨‍💻"
+logo: "img/ui.jpg"
+header-logo: "img/rlogo.png"
+filters:
+  - reveal-header
+  - quarto
+auto-stretch: false
+#css: logo.css
+format: 
+   revealjs: 
+    theme: [solarized, custom.scss]
+    highlight-style: a11y
+    transition: fade
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    code-annotations: hover
+    code-link: true
+    #multiplex: true
+    #slide-tone: false
+    #auto-slide: 2000
+    #loop: true
+    #footer: https://bb1464.github.io/workshop-introduction-to-R/
+editor: visual
+execute:
+  freeze: auto
+---
+
+# Satisfaction {.test}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(googlesheets4)
+library(ggwordcloud)
+
+dat <- read_sheet('https://docs.google.com/spreadsheets/d/11uPkcVN9cEdyJlgNEugHlSI2w0IACeLk_wm5_NNOqak/edit#gid=0')
+
+set.seed(42)
+ggplot(dat, aes(label = Satisfaction, size = 3.7)) +
+  geom_text_wordcloud() +
+  scale_size_area(max_size = 5) +
+  coord_cartesian(clip = 'off')+
+  theme_minimal()
+
+```
+
+
+# Explanation {.test}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(googlesheets4)
+library(ggwordcloud)
+
+dat <- read_sheet('https://docs.google.com/spreadsheets/d/11uPkcVN9cEdyJlgNEugHlSI2w0IACeLk_wm5_NNOqak/edit#gid=0')
+
+set.seed(42)
+ggplot(dat, aes(label = Explanation, size = 3.7)) +
+  geom_text_wordcloud() +
+  scale_size_area(max_size = 5) +
+  coord_cartesian(clip = 'off')+
+  theme_minimal()
+
+```
+
+
+
+# Suggestion {.test}
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(googlesheets4)
+library(ggwordcloud)
+
+dat <- read_sheet('https://docs.google.com/spreadsheets/d/11uPkcVN9cEdyJlgNEugHlSI2w0IACeLk_wm5_NNOqak/edit#gid=0')
+
+set.seed(42)
+ggplot(dat, aes(label = Suggestion, size = 3.7)) +
+  geom_text_wordcloud() +
+  scale_size_area(max_size = 3.2) +
+  coord_cartesian(clip = 'off')+
+  theme_minimal()
+
+```

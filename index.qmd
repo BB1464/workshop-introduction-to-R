@@ -38,7 +38,6 @@ execute:
 ::: {.column width="60%"}
 -   I am an Agrometeorologist and Processed-Based Modeller
 
-
 -   I am a mentor in the R4DS online learning community
 
 -   I am also a active member of the TidyTuesday project
