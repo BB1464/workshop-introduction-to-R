@@ -1124,7 +1124,7 @@ knitr::include_graphics(path = here::here('img/r4ds-website.png'))
 
 -   [Data carpentary](https://datacarpentry.org/R-ecology-lesson/)
 
--   [Awesome R Learning Resources](https://awesome-r.com/)
+-   [Awesome R Learning Resources](https://github.com/iamericfletcher/awesome-r-learning-resources)
 
 -   [R Cookbook](http://www.cookbook-r.com/)
 
