@@ -98,6 +98,9 @@ execute:
 ::: incremental
 -   Replicate: Two or more experiments using different experimental units, but with the same factor or independent variable settings. NB: Due to changes in
 
+<<<<<<< HEAD
+-   Randomization: Is the process of randomly assigning treatments to experimental units. As a result of the random process, every treatment factors has the same probability
+
 -   Randomization: Is the process of randomly assigning treatments to experimental units. As a result of the random process, every treatment factors has the same probability
 
 -   Blocking: Is the procedure for gathering similar experimental units into a relatively homogeneous group.
@@ -119,6 +122,11 @@ execute:
 ## Completely Randomized Design (CRD) {.test}
 
 ::: {.incremental}
+
+    -   Block what you can and randomize what you cannot." Box, Hunter and Hunter 1978
+
+## Completely Randomized Design (CRD) {.test}
+
 -   CRD is best suited for experiments with a small number of treatments
 
 -   It is used when experimental units are essentially homogeneous
@@ -206,9 +214,15 @@ A study is to investigate the response of one variety to three levels of a new p
 
 ## Split plot design (SPD) Cont. {.test}
 
+<<<<<<< HEAD
 -   Consider a study of the effects of two irrigation methods (factor A
 
 -- A1 and A2) and two fertilizers (factor B -- B1 and B2) on yield of a crop using three randomized block design
+::: incremental
+-   Consider a study of the effects of two irrigation methods (factor A
+
+-- A1 and A2) and two fertilizers (factor B -- B1 and B2) on yield of a crop using three randomized block design
+:::
 
 ![](img/split-plot-layout.png)
 
