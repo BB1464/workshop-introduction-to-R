@@ -81,6 +81,16 @@ rect.hclust(hclust.ID91, k = 3, border = "red")
 fviz_dend(x = hclust.ID91,k = 3,k_colors = 'aaas')
 
 
+## Save the Plot
+
+ggsave(
+  filename = 'cluster.png',
+  plot = last_plot(),
+  path = here::here('plot'),
+  width = 23,
+  height = 13,
+  dpi = 120
+)
 
 
 
