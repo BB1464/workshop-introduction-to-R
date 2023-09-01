@@ -1,6 +1,6 @@
 ---
 title: "Design of Experiment in R 👨‍💻"
-author: "<br>Presented by:<br>Hakeem Nofiu<br>Oluwafemi Oyedele"
+author: "Presented by:<br><br><strong>Hakeem Nofiu</strong><br>Oluwafemi Oyedele"
 
 subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
 date: today
@@ -15,7 +15,9 @@ filters:
 auto-stretch: false
 #css: logo.css
 format: 
-   revealjs: 
+   revealjs:
+    width: 1600
+    height: 900 
     theme: [solarized, custom.scss]
     highlight-style: a11y
     transition: fade
@@ -24,6 +26,7 @@ format:
     chalkboard: true
     code-annotations: hover
     code-link: true
+    self-contained: false
     #multiplex: true
     #slide-tone: false
     #auto-slide: 2000
