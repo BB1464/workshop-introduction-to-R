@@ -9,20 +9,26 @@ editor: visual
 ```{r}
 library(tidyverse)
 library(agricolae)
+library(here)
 ```
 
 # Completely Randomized Design - CRD
 
 ```{r}
 trt <- c("G1","G2","G3","G4","G5")
-plan <- design.crd(trt,3, seed=7638)
-plan <- plan$book
+
+
+plan <- design.crd(trt = trt,r = 3, seed=7638,serie = 0)
+
+book <- plan$book
+
 View(plan)
 ```
 
 # Write out the plan
+
 ```{r}
-write_csv(plan, file = "data/CRDplan.csv")
+write_csv(x = book, file = here("data/CRDplan.csv"))
 
 ```
 
@@ -30,18 +36,22 @@ write_csv(plan, file = "data/CRDplan.csv")
 
 ```{r}
 trt1 <- c("A","B","C","D","E")
-plan2 <- design.rcbd(trt1, 4, seed = 161)
-plan2 <- plan2$book
+
+plan2 <- design.rcbd(trt = trt1, r = 4, seed = 161,serie = 0)
+
+book2 <- plan2$book
 View(plan2)
 ```
 
 # write out the plan
+
 ```{r}
-write_csv(plan2, file = "data/RCBDplan.csv")
+write_csv(x = book2, file = here("data/RCBDplan.csv"))
 
 ```
 
 # Split Plot Design
+
 ```{r}
 phosphorus <- c('0 kg P','37.5 kg P','75 kg P')
 
@@ -51,14 +61,15 @@ varieties <- c('TME419','TMS581')
 
 plan4 <- design.split(trt1 = phosphorus,trt2 = varieties,r = 4,seed = 123)
 
-plan4 <- plan4$book
+book4 <- plan4$book
 
-View(plan4)
+View(book4)
 ```
 
 # write out the plan
+
 ```{r}
-write_csv(plan4, file = "data/SplitPlot.csv")
+write_csv(x = book4, file = here("data/SplitPlot.csv"))
 
 ```
 
@@ -75,7 +86,7 @@ s <- t/k # Number of blocks
 # replications r
 r <- 2  # replication
 
-plan5 <- design.alpha(trt,k,r,serie=2, seed=1234)
+plan5 <- design.alpha(trt = trt,k = k,r = r,serie=0, seed=1234)
 
 plan5 <- plan5$book
 
@@ -85,7 +96,7 @@ View(plan5)
 # write out the plan
 
 ```{r}
-write_csv(plan5, file = "data/ADplan.csv")
+write_csv(x = plan5, file = here("data/ADplan.csv"))
 
 ```
 
@@ -94,21 +105,20 @@ write_csv(plan5, file = "data/ADplan.csv")
 ```{r}
 varieties<-c("perricholi","yungay","maria bonita","tomasa")
 
-outdesign <-design.lsd(varieties,serie=2,seed=23)
+outdesign <-design.lsd(trt = varieties,serie=0,seed=23)
 
 lsd <- outdesign$book
 ```
 
-
 # write out the plan
 
 ```{r}
-write_csv(lsd, file = "data/LSD.csv")
+write_csv(x = lsd, file = here("data/LSD.csv"))
 
 ```
 
 # Your Turn
 
-- A researcher has seven (5) genotypes to be tested with 3 different levels of Potassium (No
-treatment, 50%, and 100% of the recommendation). Choose a appropriate design and then design the experiment using R.
+-   A researcher has seven (7) genotypes to be tested with 3 different levels of Potassium (No treatment, 50%, and 100%). Choose a appropriate design and then design the experiment using R. The experiment is replicated three times.
+
 

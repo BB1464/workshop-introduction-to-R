@@ -22,8 +22,8 @@ data(mtcars)
 
 ## Base R Function
 
-cor(mtcars)  #%>%
-  #knitr::kable()
+cor(mtcars)  %>%
+  knitr::kable()
 
 
 ## Make use of correlation function

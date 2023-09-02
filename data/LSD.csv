@@ -1,0 +1,17 @@
+plots,row,col,varieties
+11,1,1,maria bonita
+12,1,2,perricholi
+13,1,3,yungay
+14,1,4,tomasa
+21,2,1,yungay
+22,2,2,tomasa
+23,2,3,perricholi
+24,2,4,maria bonita
+31,3,1,perricholi
+32,3,2,maria bonita
+33,3,3,tomasa
+34,3,4,yungay
+41,4,1,tomasa
+42,4,2,yungay
+43,4,3,maria bonita
+44,4,4,perricholi
