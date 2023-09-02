@@ -55,7 +55,6 @@ ggplot(dat, aes(label = Satisfaction, size = 3.7)) +
 
 ```
 
-
 # Explanation {.test}
 
 ```{r}
@@ -77,8 +76,6 @@ ggplot(dat, aes(label = Explanation, size = 3.7)) +
   theme_minimal()
 
 ```
-
-
 
 # Suggestion {.test}
 

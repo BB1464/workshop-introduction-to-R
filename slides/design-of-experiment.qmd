@@ -37,11 +37,9 @@ execute:
   freeze: auto
 ---
 
-
 ## Outline
 
-::: {.incremental}
-
+::: incremental
 -   Basic ideas
 
 -   Definition of basic concepts
@@ -53,7 +51,7 @@ execute:
 
 ## Definition of basic terms {.test}
 
-::: {.incremental}
+::: incremental
 -   **Experiment**: an investigation in which a researcher applies some **treatments** to **experimental units** and then observes its effect by measuring one or more response variables
 
 -   **Treatment**: This is any measure or procedure whose effects are to be measured and perhaps compared with others.
@@ -63,7 +61,7 @@ execute:
 
 ## Definition of basic terms Cont. {.test}
 
-::: {.incremental}
+::: incremental
 -   **Experimental Plot**: This is the unit of experimental material receiving only one application of a treatment.
 
 -   **Sampling Unit**: This is that portion of the experimental unit taken for analysis and subsequently used for decision making.
@@ -75,7 +73,7 @@ execute:
 
 ## Experimental Design {.test}
 
-::: {.incremental}
+::: incremental
 -   The term experimental design refers to a set of experiments that are prepared in advance of their execution
 
 -   There are many types of experimental designs CRD, RCBD, IBD, etc.
@@ -85,7 +83,7 @@ execute:
 
 ## Purpose of experimental design {.test}
 
-::: {.incremental}
+::: incremental
 -   Determine cause of variation in measured responses
 
 -   Identifying the variables that cause a maximum or minimal response
@@ -99,7 +97,7 @@ execute:
 
 ## Key Concept in Design of Experiment {.test}
 
-::: {.incremental}
+::: incremental
 -   Replicate: Two or more experiments using different experimental units, but with the same factor or independent variable settings. NB: Due to changes in
 
 -   Randomization: Is the process of randomly assigning treatments to experimental units. As a result of the random process, every treatment factors has the same probability
@@ -109,19 +107,19 @@ execute:
 
 ## Why blocking? {.test}
 
-::: {.incremental}
+::: incremental
 -   Removes extraneous variation from data
 
 -   Serves as an error control strategy
 
 -   Enhances precision in inferential data analysis
 
-- Block what you can and randomize what you cannot." Box, Hunter and Hunter 1978
+-   Block what you can and randomize what you cannot." Box, Hunter and Hunter 1978
 :::
 
 ## Completely Randomized Design (CRD) {.test}
 
-::: {.incremental}
+::: incremental
 -   CRD is best suited for experiments with a small number of treatments
 
 -   It is used when experimental units are essentially homogeneous
@@ -135,7 +133,7 @@ execute:
 
 ## Condition for use {.test}
 
-::: {.incremental}
+::: incremental
 -   It is used where and when experimental materials are homogeneous
 
 -   And when the only source of variability apart from experimental error, is the treatment applied.
@@ -143,7 +141,7 @@ execute:
 
 ## Randomized Complete Block Design (RCBD) {.test}
 
-::: {.incremental}
+::: incremental
 -   Probably the most used experimental design in agricultural field trial
 
 -   Each treatment replicated once in each block (balanced and complete)
@@ -189,7 +187,7 @@ A study is to investigate the response of one variety to three levels of a new p
 
 ## Split plot design (SPD) {.test}
 
-::: {.incremental}
+::: incremental
 -   Design developed by Ronald Fisher (1925) for use in agricultural experiments
 
 -   It is a factorial design with restricted randomization of the treatment combinations within each block
@@ -231,7 +229,7 @@ An experiment was implemented to find the effect of spraying pesticide (A1, A2, 
 
 ## Incomplete block design {.test}
 
-::: {.incremental}
+::: incremental
 -   An appropriate design for evaluating large number of treatment
 
 -   Useful when heterogeneity is great within block
@@ -251,7 +249,7 @@ An experiment was implemented to find the effect of spraying pesticide (A1, A2, 
 
 -   For this design, number of treatments must be perfect square
 
-::: {.incremental}
+::: incremental
 -   t = k2 e.g. 25, 36, 49, 81, 100, etc
 
 -   The block size (k) is the square root of the number of treatments (k = t½ )
@@ -267,7 +265,7 @@ An experiment was implemented to find the effect of spraying pesticide (A1, A2, 
 
 **Rectangular Lattice design**
 
-::: {.incremental}
+::: incremental
 The number of treatments is t = s\*(s-1) and k = s -- 1
 
 -   Example 6 x 5 rectangular lattice: has 6 blocks per complete replicate, block size of 5, and 30 treatments

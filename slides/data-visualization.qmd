@@ -36,28 +36,24 @@ execute:
 
 ## **Agenda** {.test}
 
-::: {.incremental}
+::: incremental
+-   Introduction to the Grammar of Graphics
 
-- Introduction to the Grammar of Graphics
+-   We will be looking at the different layers that is in ggplot2
 
-- We will be looking at the different layers that is in ggplot2
+-   The focus of this talk will be on the 20% that is useful 80% of the time
 
-- The focus of this talk will be on the 20% that is useful 80% of the time
+-   **My goal is to make you excited about ggplot2!**
 
-- **My goal is to make you excited about ggplot2!**
-
-
-- I will entertain **questions** at the end
+-   I will entertain **questions** at the end
 :::
-
 
 ## Packages Used Today {.test}
 
-:::{.incremental}
-- This workshop focuses on data visualization with  [`ggplot2`](https://ggplot2.tidyverse.org).
+::: incremental
+-   This workshop focuses on data visualization with [`ggplot2`](https://ggplot2.tidyverse.org).
 
-
-- `ggplot2` is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell `ggplot2` how to map variables to `aesthetics`, what graphical primitives to use (`geoms`), and it takes care of the details.
+-   `ggplot2` is a system for declaratively creating graphics, based on The Grammar of Graphics. You provide the data, tell `ggplot2` how to map variables to `aesthetics`, what graphical primitives to use (`geoms`), and it takes care of the details.
 :::
 
 ```{r load}
@@ -69,197 +65,189 @@ library(ggplot2)
 
 ## Grammar of Graphics
 
-:::: {.columns}
+::: columns
+::: {.column width="50%"}
+::: incremental
+-   First published in 1999
 
-::: {.column width='50%'}
-:::{.incremental}
-- First published in 1999
+-   A theoretical deconstruction of data graphics
 
-- A theoretical deconstruction of data graphics
+-   Foundation for many graphic applications
 
-- Foundation for many graphic applications
+-   The Grammar of Graphics can be applied to every type of plot
 
-- The Grammar of Graphics can be applied to every type of plot
-
-- Concisely describe components
+-   Concisely describe components
 :::
 :::
 
-::: {.column width='50%'}
+::: {.column width="50%"}
 ![](img/wilkinson.jpeg)
 :::
-::::
+:::
 
-## Grammar of Graphics{background-color="#000000" .test}
+## Grammar of Graphics {.test background-color="#000000"}
+
 ![](img/tom1.png)
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- Your dataset
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   Your dataset
 
-- Tidy format
+-   Tidy format
 
-- There is no visualization without a dataset
+-   There is no visualization without a dataset
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_data.png)
 :::
-
-::::
-
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- **Aesthetics mapping**: links variable in the data to graphical properties in the geometry.
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   **Aesthetics mapping**: links variable in the data to graphical properties in the geometry.
 
-- We can specify the following properties within the aestetic mapping (colour, shape, alpha, fill, size).
+-   We can specify the following properties within the aestetic mapping (colour, shape, alpha, fill, size).
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_mapping.png)
 :::
-
-::::
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- Transform input variables to displayed values:
-  
-  - Bins for histogram
-  
-  - Summary statistics for boxplot using `stat_boxplot()`
-  
-  - No. of observations in a category for bar chart `stat_count`
-  
-- Even tidy data may need some transformation
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   Transform input variables to displayed values:
 
-- The statistics is linked to the geometry
+    -   Bins for histogram
+
+    -   Summary statistics for boxplot using `stat_boxplot()`
+
+    -   No. of observations in a category for bar chart `stat_count`
+
+-   Even tidy data may need some transformation
+
+-   The statistics is linked to the geometry
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_statistics.png)
 :::
-
-::::
-
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- Scales help us to control the mapping from data to aesthetics
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   Scales help us to control the mapping from data to aesthetics
 
+-   Scales also provide the tools that let you interpret the plot: the axes and legends.
 
--  Scales also provide the tools that let you interpret the plot: the axes and legends.
+-   Scales are automatically generated in ggplot and can be customized
 
+    -   log scale
 
-- Scales are automatically generated in ggplot and can be customized
-  
-  - log scale
-  
-  - We can also specify limit within the scale
+    -   We can also specify limit within the scale
 
-- Scales help you interpret the plot
+-   Scales help you interpret the plot
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_scales.png)
 :::
-
-::::
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- Geometries help us to interpret the aesthetics as graphical representation
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   Geometries help us to interpret the aesthetics as graphical representation
 
-- Determines your plot type
-  - bar chart `geom_bar()`
-  - scatter `geom_point()`
-  - box plot `geom_boxplot()`
-  - histogram `geom_histogram()`
+-   Determines your plot type
+
+    -   bar chart `geom_bar()`
+    -   scatter `geom_point()`
+    -   box plot `geom_boxplot()`
+    -   histogram `geom_histogram()`
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_geometries.png)
 :::
-
-::::
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- Divide your data into panels using one or two groups
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   Divide your data into panels using one or two groups
 
-- Allows you to look at smaller subsets of data
+-   Allows you to look at smaller subsets of data
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_facets.png)
 :::
-
-::::
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- A coordinate system, maps the position of objects onto the plane of the plot.
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   A coordinate system, maps the position of objects onto the plane of the plot.
 
-- It is also the physical mapping of the aesthetics to the paper
+-   It is also the physical mapping of the aesthetics to the paper
 
-- Coordinate systems affect all position variables simultaneously and differ from scales in that they also change the appearance of the geometric objects.
+-   Coordinate systems affect all position variables simultaneously and differ from scales in that they also change the appearance of the geometric objects.
 
-- Coordinate systems control how the axes and grid lines are drawn.
+-   Coordinate systems control how the axes and grid lines are drawn.
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_coordinates.png)
 :::
-
-::::
+:::
 
 ## Grammar of Graphics
-:::: {.columns}
 
-::: {.column width='40%'}
-:::{.incremental}
-- This controls the overall look of the plot
+::: columns
+::: {.column width="40%"}
+::: incremental
+-   This controls the overall look of the plot
 
-- Spans every part of the graphic that is not linked to the data
+-   Spans every part of the graphic that is not linked to the data
 
-- Themes give you control over things like fonts, ticks, panel strips, and backgrounds
+-   Themes give you control over things like fonts, ticks, panel strips, and backgrounds
 :::
 :::
 
-::: {.column width='60%'}
+::: {.column width="60%"}
 ![](img/tom_theme.png)
 :::
+:::
 
-::::
+## Grammar of Graphics {.test}
 
-## Grammar of Graphics{.test}
 ![](img/horst_ggplot.jpeg){style="float:center;padding: 0 0 2 10px;" fig-alt="Headshot of Dr. Maria Tackett" width="1000"}
+
+## Demo on ggplot2
