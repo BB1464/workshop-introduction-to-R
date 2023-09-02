@@ -8,10 +8,10 @@
 
 ## Load Required Packages
 
-library(correlation)
-library(tidyverse)
-library(metan)
-library(ggcorrplot)
+library(correlation) # Correlation table
+library(tidyverse) # Data Wrangling
+library(metan) # Correlation Plot
+library(ggcorrplot) # Correlation Plot
 
 
 
@@ -22,17 +22,17 @@ data(mtcars)
 
 ## Base R Function
 
-cor(mtcars)  %>%
+round(cor(mtcars),2)  %>%
   knitr::kable()
 
 
 ## Make use of correlation function
 
-Cor <- correlation(data = mtcars)
+Cor <- correlation::correlation(data = mtcars,redundant = TRUE)
 
 Cor
 
-summary(object = Cor,redundant=T)
+summary(object = Cor,redundant=TRUE)
 
 
 
@@ -40,12 +40,13 @@ summary(object = Cor,redundant=T)
 
 cor <- cor(mtcars, use="complete.obs")
 
-round(cor,2)
+cor <- round(cor,2)
 
+cor
 
 ## Correlation
 
-ggcorrplot::ggcorrplot(cor,
+ggcorrplot(corr = cor,
           hc.order = TRUE,
          type = "lower",
         lab = TRUE)
@@ -58,3 +59,10 @@ p=metan::corr_coef(data = mtcars,type = 'linear',method = 'pearson') %>%
   plot()
 
 p
+
+
+mtcars_selected <- mtcars %>%
+  select(mpg,cyl)
+
+
+dput(x = mtcars_selected)
