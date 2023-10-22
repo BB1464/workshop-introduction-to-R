@@ -1,0 +1,154 @@
+---
+title: "Introduction to PCA; Cluster analysis and Report Writing in R👨‍💻"
+author: "Oluwafemi Oyedele"
+subtitle: "Post Graduate Students, CPEB Club, \nUniversity of Ibadan"
+date: "2023-08-19"
+footer:  "[Statistics and Data Analysis using R](https://github.com/BB1464/workshop-introduction-to-R) 👨‍💻"
+logo: "img/ui.jpg"
+header-logo: "img/rlogo.png"
+filters:
+  - reveal-header
+  - quarto
+auto-stretch: false
+#css: logo.css
+format: 
+   revealjs:
+    width: 1600
+    height: 900 
+    theme: [solarized, custom.scss]
+    highlight-style: a11y
+    transition: fade
+    slide-number: true
+    show-slide-number: all
+    chalkboard: true
+    code-annotations: hover
+    code-link: true
+    self-contained: false
+    #multiplex: true
+    #slide-tone: false
+    #auto-slide: 2000
+    #loop: true
+    #footer: https://bb1464.github.io/workshop-introduction-to-R/
+editor: visual
+execute:
+  freeze: auto
+---
+
+## **Agenda** {.test}
+
+::: incremental
+-   Introduction to PCA; Cluster analysis and Report writing in R
+
+-   **My goal is to make you excited about how to perform this analysis in R!**
+
+-   I will entertain **questions** at the end
+:::
+
+## Packages Used Today {.test}
+
+::: incremental
+-   Here we are going to focuses on PCA [`factoextra`](https://rpkgs.datanovia.com/factoextra/index.html).
+
+- `PCA` is used to summarize the information contained in a continuous (i.e, quantitative) multivariate data by reducing the dimensionality of the data without loosing important information.
+:::
+
+```{r load}
+#| echo: true
+#| include: true
+
+library(factoextra) 
+```
+
+## Principal Component Analysis {.test}
+
+::: {.incremental}
+
+- Principal component analysis (PCA) allows us to summarize and visualize the information in a data set containing individuals/observations described by multiple inter-correlated quantitative variables.
+
+- Each variable could be considered as a different dimension. 
+
+- If you have more than 3 variables in your data sets, it could be very difficult to visualize a multi-dimensional hyperspace.
+
+- The goal of PCA is to identify directions (or Principal Components) along which the direction in the data is maximal.
+:::
+
+## PCA Continuation {.test}
+
+:::{.incremental}
+
+- Principal component analysis is used to extract the important information from a multivariate data table and to express this information as a set of few new variables called principal components. 
+
+- These new variables correspond to a linear combination of the originals. 
+
+- The number of principal components is less than or equal to the number of original variables.
+
+- The information in a given data set corresponds to the total variation it contains. The goal of PCA is to identify directions (or principal components) along which the variation in the data is maximal.
+
+- PCA is very useful when variable within the dataset are highly correlated.
+:::
+
+## R packages {.test}
+
+::: {.incremental}
+
+Several functions from different packages are available in the R software for computing PCA:
+
+- prcomp() and princomp() [built-in R stats package]
+
+- **PCA() [FactoMineR package]**
+
+- **dudi.pca() [ade4 package]**
+
+- **epPCA() [ExPosition package]**
+
+- No matter what function you decide to use, you can easily extract and visualize the results of PCA using R functions provided in the factoextra R package.
+
+:::
+
+## Install the package as follow: {.test}
+
+::: {.incremental}
+
+- install.packages("factoextra")
+
+- Load them in R, by typing this:
+
+- library("factoextra")
+
+:::
+
+## Visualization and Interpretation of PCA Results with factoextra R Package
+
+::: {.incremental}
+
+- **get_eigenvalue** (res.pca): Extract the eigenvalues/variances of principal components.
+
+- **fviz_eig** (res.pca): Visualize the eigenvalues
+
+- **get_pca_ind** (res.pca), **get_pca_var** : Extract the results for individual and variable respectively.
+
+- **fviz_pca_ind**, **fviz_pca_var** (res.pca): Visualize the results of individual and variables, respectively.
+
+- **fviz_pca_biplot** (res.pca): Make a biplot of individuals and variables.
+:::
+
+## Eigenvalues or Variances {.test}
+
+::: {.incremental}
+
+- The eigenvalues measure the amount of variation retained by each principal component.
+
+- The eigenvalues are larger for the first PCs and small for the subsequent PCs.
+
+- The first PCs corresponds to the directions with the maximum amount of variation in the data set.
+
+- Eigenvalues can be used to determine the number of principal components to retain after PCA (Kaiser, 1961).
+
+- An eigenvalue > 1 indicates that PCs account for more variance than accounted by one of the original variables in standardized data. This is commonly used as cutoff point for which PCs are retained. 
+
+- The above point holds true only when the data are standardized.
+:::
+
+
+
+## Demo on PCA {.test}

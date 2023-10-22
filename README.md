@@ -120,6 +120,10 @@ use_course("https://github.com/BB1464/workshop-introduction-to-R/archive/refs/he
 
 The slides can be found [**here**](https://bb1464.github.io/workshop-introduction-to-R/)
 
+PCA Slides for the last session can be found
+[**here**](https://rpubs.com/Unical21/1094678)
+
+
 ## Packages
 
 my_packages <- c("tidyverse","readxl","factoextra","agricolae","agridat","lmerTest","lme4","sjPlot","skimr","ggtext",
